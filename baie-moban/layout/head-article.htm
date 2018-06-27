@@ -1,0 +1,17 @@
+<!-- 百度链接提交自动推送 用于百度收录文章 -->
+<script>
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+<meta name="description" content="{dede:field.description  function='html2text(@me)'/}"/>
+<title>{dede:field.title/}-{dede:global.cfg_webname/}</title>

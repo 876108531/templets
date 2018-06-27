@@ -1,0 +1,76 @@
+<nav class="navbar navbar-fixed-top" style="z-index: 3000">
+    <div class="clearfix" style="max-width: 1200px;height: 44px;margin: auto">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#baie-navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="{dede:global.cfg_templets_skin/}/icon/logo-baieBrand.png" alt="百e国际品牌图" style="height: 30px"/></a>
+        </div>
+        <div class="collapse navbar-collapse" id="baie-navbar">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a class="baieNav-index" href="/">首页</a>
+                    <div class="under_line"></div>
+                </li>
+                <li>
+                    {dede:type typeid='13'}
+                    <a class="baieNav-walkInBaie" href='[field:typelink /]'>[field:typename/]</a>
+                    <div class="under_line"></div>
+                    {/dede:type}
+                </li>
+                <li class="dropdown">
+                    {dede:type typeid='1'}
+                    <a href='#' class="dropdown-toggle baieNav-news" data-toggle="dropdown">[field:typename/]<strong class="caret"></strong></a>
+                    <div class="under_line"></div>
+                    {/dede:type}
+                    <ul class="dropdown-menu" style="min-width: 140px;width: 140px;padding: 20px 0 20px;margin-left: -9%;">
+                        {dede:channelartlist typeid='top'  typeid='3,15'}
+                        <li><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></li>
+                        {/dede:channelartlist}
+                    </ul>
+                </li>
+                <li>
+                    {dede:type typeid='32'}
+                    <a href='[field:typelink /]' class="baieNav-pioneer">[field:typename/]</a>
+                    <div class="under_line"></div>
+                    {/dede:type}
+                </li>
+                <li>
+                    {dede:type typeid='30'}
+                    <a href='[field:typelink /]' class="baieNav-product">[field:typename/]</a>
+                    <div class="under_line"></div>
+                    {/dede:type}
+                </li>
+                <li>
+                    {dede:type typeid='36'}
+                    <a href='[field:typelink /]' class="baieNav-publicWelfare">[field:typename/]</a>
+                    <div class="under_line"></div>
+                    {/dede:type}
+                </li>
+                <li>
+                    {dede:type typeid='7'}
+                    <a href='[field:typelink /]' class="baieNav-recruitment">[field:typename/]</a>
+                    <div class="under_line"></div>
+                    {/dede:type}
+                </li>
+                <li class="dropdown">
+                    {dede:type typeid='25'}
+                    <a href='[field:typelink /]' class="dropdown-toggle" data-toggle="dropdown">[field:typename/]<strong class="caret"></strong></a>
+                    <div class="under_line"></div>
+                    {/dede:type}
+                    <ul class="dropdown-menu" style="min-width: 140px;width: 140px;padding: 20px 0 20px;margin-left: -33%;">
+                        {dede:type typeid='26'}
+                        <li><a href="[field:typelink /]" target="_blank">[field:typename/]</a></li>
+                        {/dede:type}
+                        {dede:type typeid='27'}
+                        <li><a href="[field:typelink /]" target="_blank">[field:typename/]</a></li>
+                        {/dede:type}
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

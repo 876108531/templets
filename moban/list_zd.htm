@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<!--<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0">-->
+<title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+<link href="/skin/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="/skin/css/swiper-3.3.1.min.css" />
+<link href="/skin/css/yrjf.css" rel="stylesheet">
+<!--[if IE]>
+			<script src="/skin/css/respond.js"></script>
+			<script src="/skin/css/html5.js"></script>
+			<link href="/skins/tyle/ie.yrjf.css" rel="stylesheet">
+		<![endif]-->
+
+<!-- baie.com.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "https://hm.baidu.com/hm.js?64523922e3a0bb8fdfc9c7e9d61c0feb";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "https://hm.baidu.com/hm.js?c4c3efdacc727de600df4d221b325ab1";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+{dede:include filename="head.htm"/}
+<section class="guide-body">
+  <div class="in-banner"> <img src="/skin/images/guide-banner.jpg" alt="创业图" /> </div>
+  <div class="content1440">
+    <div class="titlePage"> <span class="cn">{dede:field name='typename'/}</span> <span class="en">EXPERT PARTNER</span> </div>
+    <ul>
+     {dede:list pagesize ='10'}
+      <li class="boxs box1">
+        <div class="box-img"> <img src="[field:picname/]" alt="创业图" /> </div>
+        <div class="box-text">
+          <div class="tit"> <span class="xm">[field:title/]</span> <span class="js"></span> </div>
+          <p>[field:description function="cn_substr(@me,600)"/]...</p>
+        </div>
+        <div class="box-btn"> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=396060960&site=qq&menu=yes">立即约见</a> </div>
+      </li>
+    {/dede:list}  
+    </ul>
+    <div class="moreload"><div class="dede_pages"><ul class=pagelist>{dede:pagelist listitem="info,index,end,pre,next,pageno,option"listsize="1"/}</ul></div>
+ </div>
+    <div class="box box4">
+      <div class="project-names">【感兴趣，成为合伙人】</div>
+      <div class="fom">
+        <form  id="form1" name="from" action="/plus/diy.php" enctype="multipart/form-data" method="post">
+       <input type="hidden" name="action" value="post" />
+<input type="hidden" name="diyid" value="1" />
+<input type="hidden" name="do" value="2" />
+          <div class="input line"> <span>留言内容：</span>
+            <div class="input-box cur">
+              <textarea name="field5" class="address-form" id="lynr" placeholder="提示：严禁发布含有联系方式和广告性质的内容，违者一律删除！"></textarea>
+              <span class="btn_Prompt input-address lynr-img"></span> <span class="tips-address tipe-text txt"></span> </div>
+          </div>
+          <div class="input threeline"> <span>姓名：</span>
+            <div class="input-box">
+              <input name="field1" id="xm" value="" class="cardM-form " placeholder="请输入您的真实姓名" type="">
+              <span class="btn_Prompt input-cardM Prompt-txt xm-img"></span> <span class="tips-cardM tipe-text text-user"></span> </div>
+          </div>
+          <div class="input threeline"> <span>联系方式：</span>
+            <div class="input-box">
+              <input name="field2" id="phone" value="" class="cardM-form" placeholder="请输入您的手机号\座机号" type="">
+              <span class="btn_Prompt input-cardM Prompt-txt phone-img"></span> <span class="tips-cardM tipe-text text-phone"></span> </div>
+          </div>
+          <div class="input threeline btns"> <span style="opacity:0;filter:alpha(opacity=0)">联系方式：</span>
+            <input type="hidden" name="field3" value="" />
+            <input type="hidden" name="field4" value="" />
+          <input type="hidden" name="dede_fields" value="field5,multitext;field1,text;field2,text" />
+<input type="hidden" name="dede_fieldshash" value="9aaa526c3d7172bd0b64b037b0133518" />
+            <div class="input-box">
+              <input type="submit" id="" value="成为合伙人" class="btn-input submit-btn" />
+            </div>
+          </div>
+          <p class="ts" style="color: #989898;font-size:12px ;">提示：感谢您的支持，提交成功后工作人员将尽快与您取得联系！</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+{dede:include filename="footer.htm"/}
+ 
+<script src="/skin/css/jquery-1.10.1.min.js"></script> 
+<script src="/skin/css/my_plugin-1.1.1.js"></script> 
+<script src="/skin/css/jquery.easing.js"></script> 
+<script src="/skin/css/mousewheel.js"></script> 
+<script src="/skin/css/bootstrap.min.js"></script> 
+<script src="/skin/css/swiper-3.3.1.jquery.min.js"></script> 
+<script src="/skin/css/yrjf.js" id="JS" page="project"></script>
+</body>
+</html>

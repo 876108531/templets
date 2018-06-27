@@ -1,0 +1,18 @@
+
+<nav class="nav">
+  <div class="nav-box">
+    <div class="nav-l"> <a href="/"><img src="/skin/images/logo.png" alt="" /></a> </div>
+    <ul class="nav-r">
+      <li> <a href="/">首页</a> </li>
+     {dede:channelartlist  typeid='top' } 
+      <li class="down"> <a href='{dede:field name='typeurl'/}'>{dede:field name='typename'/}</a>
+        <div class="menu"> 
+      {dede:channel type='son' noself='yes' }
+          <div class="menu-list"> <a href='[field:typelink/]'>[field:typename/]</a> </div>
+          {/dede:channel}
+           </div>
+      </li>
+    {/dede:channelartlist}
+    </ul>
+  </div>
+</nav>

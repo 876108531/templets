@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+<meta charset="utf-8">
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description  function='html2text(@me)'/}" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<!--<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0">-->
+<title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+<link href="/skin/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="/skin/css/swiper-3.3.1.min.css" />
+<link href="/skin/css/yrjf.css" rel="stylesheet">
+<!--[if IE]>
+			<script src="/skin/css/respond.js"></script>
+			<script src="/skin/css/html5.js"></script>
+			<link href="/skins/tyle/ie.yrjf.css" rel="stylesheet">
+		<![endif]-->
+
+<!-- baie.com.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "https://hm.baidu.com/hm.js?64523922e3a0bb8fdfc9c7e9d61c0feb";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "https://hm.baidu.com/hm.js?c4c3efdacc727de600df4d221b325ab1";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body class="">
+{dede:include filename="head.htm"/}
+<section class="school-body">
+  <div class="in-banner"> <img src="/skin/images/zeren.jpg" alt="公益栏目图" /> </div>
+ 
+  <div class="content1440">
+    <div class="titlePage"> <span class="cn">{dede:field.typename/}</span> <span class="en">POLICY & LAW</span> </div>
+    <section class="model_news_detail">
+    
+      <div class="back">{dede:type}<a href="[field:typelink/]" class="animate">返回列表</a>{/dede:type} </div> 
+   
+    
+      <div class="title">{dede:field.title/}</div> 
+      <div class="summary">发布时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}    信息来源：{dede:field.source/}    浏览次数：<span><script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}"type='text/javascript' language="javascript"></script></span></div>
+      <div class="detailContent"> {dede:field.body/}
+ </div>
+      <div class="newShare">
+        <div class='jiathis_style_24x24' style='float:right;'> <a class='jiathis_button_qzone'></a> <a class='jiathis_button_tsina'></a> <a class='jiathis_button_tqq'></a> <a class='jiathis_button_weixin'></a> <a class='jiathis_button_renren'></a> <a href='http://www.jiathis.com/share' class='jiathis jiathis_txt jtico jtico_jiathis' target='_blank'></a> <a class='jiathis_counter_style'></a> </div>
+
+        <strong>分享到：</strong> 
+        <script type='text/javascript' src='/skin/css/jia.js' charset='utf-8'></script> 
+      </div>
+      <div class="detailPage">
+        <div>{dede:prenext get='pre'/} </div>
+        <div>{dede:prenext get='next'/}</div>
+      </div>
+    </section>
+  </div>
+</section>
+{dede:include filename="footer.htm"/}
+ {dede:global.fenxiang/}
+<script src="/skin/css/jquery-1.10.1.min.js"></script> 
+<script src="/skin/css/my_plugin-1.1.1.js"></script> 
+<script src="/skin/css/jquery.easing.js"></script> 
+<script src="/skin/css/mousewheel.js"></script> 
+<script src="/skin/css/bootstrap.min.js"></script> 
+<script src="/skin/css/swiper-3.3.1.jquery.min.js"></script> 
+<script src="/skin/css/yrjf.js" id="JS" page="school"></script>
+</body>
+</html>

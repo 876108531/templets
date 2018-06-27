@@ -1,0 +1,103 @@
+/*common START*/
+a, img {
+    border: 0;
+}
+.under-line {
+    width: 80px;
+    height: 4px;
+    background-color: #FFF;
+    margin: 46px auto 42px;
+}
+
+.jumbotron {
+    background-color: transparent;
+}
+.jumbotron h1 {
+    font-size: 30px;
+}
+.jumbotron p {
+    text-align: start;
+    text-indent: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*.jumbotron span { !*文本段落前空两格*!*/
+/*display: inline-block;*/
+/*width: 44px;*/
+/*}*/
+.jumbotron .btn-more {
+    background-color: transparent;
+    width: 160px;
+    height: 48px;
+    font-size: 20px;
+    line-height: 34px;
+    border-radius: 0;
+}
+/*common END*/
+/*banner START*/
+.banner {
+    /*height: 800px;*/
+}
+/*banner END*/
+/*baie-body START*/
+
+.baie-box1 .jumbotron {
+    padding-top: 60px;
+  margin: 0;
+    padding-bottom: 70px;
+}
+.baie-box1 p {
+    height: 220px;
+    margin-top: 62px;
+    margin-bottom: 17px;
+}
+.baie-box2 .jumbotron {
+    padding-top: 28px;
+    margin-bottom: 0;
+}
+.baie-box3 .column {
+    width: 480px;
+    height: 300px;
+    padding: 0;
+  margin: 10px 15px;
+}
+.baie-box3 .thumbnail {
+    position: relative;
+    width: 480px;
+    height: 300px;
+    margin: 0;
+    border-radius: 0;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    font-size: 14px;
+}
+.baie-box3 .thumbnail:hover {
+    width: 510px;
+    height: 310px;
+    top: -5px;
+    left: -15px;
+    z-index: 100;
+    box-shadow: 0 14px 27px 0 #CCC;
+    font-size: 16px;
+}
+.baie-video {
+            position: relative;
+            width: 960px;
+            margin: 37px auto 0;
+        }
+        .baie-video>.video-btn {
+            position: absolute;
+            top: 220px;
+            left: 430px;
+            z-index: 2000;
+        }
+      .b-container {
+          padding-right: 15px;
+          padding-left: 15px;
+          margin-right: auto;
+          margin-left: auto;
+      }
+/*baie-body END*/

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {dede:include filename="layout/head-article.htm"/}
+    {dede:include filename="layout/head.htm"/}
+    <style>.navbar {
+        background-color: #333;
+    }
+    </style>
+    <style>
+        .promotion {
+            position: relative;
+            width: 260px;
+            height: 260px;
+            margin-left: 100px;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .swiper-slide {
+            background-size: cover;
+            background-position: center;
+        }
+        .gallery-top {
+            height: 80%;
+            width: 100%;
+        }
+        .gallery-thumbs {
+            height: 20%;
+            box-sizing: border-box;
+            padding: 10px 0;
+        }
+        .gallery-thumbs .swiper-slide {
+            width: 25%;
+            height: 100%;
+            opacity: 0.4;
+        }
+        .gallery-thumbs .swiper-slide-active {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+{dede:include filename="components/header.htm"/}
+<h1 id="typename" class="hidden">{dede:field name='typename'}{/dede:field}</h1>
+<section>
+    <div class="container-fluid clearfix article_box">
+        <div class="pull-left">
+          <div><ol class="breadcrumb baie-breadcrumb">
+            <span>您所在的位置：</span>
+            <li><a href="/">首页</a></li>
+            <li>{dede:type}<a href="[field:typelink/]">[field:typename/]</a>{/dede:type}</li>
+            <li class="active">{dede:field.title/}</li>
+        </ol></div>
+            <section class="model_news_detail" style="width: 800px">
+                <div class="title">{dede:field.title/}</div>
+                <div class="summary">{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}    来源：{dede:field.source/}    浏览：<span><script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}"type='text/javascript' language="javascript"></script></span></div>
+                <div class="detailContent"> {dede:field.body/}
+                </div>
+                <div class="newShare">
+                    <div class="bdsharebuttonbox" style="float: right"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+                    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+                    <strong style="line-height: 28px">分享到：</strong>
+                </div>
+                <div class="detailPage">
+                    <div>{dede:prenext get='pre'/} </div>
+                    <div>{dede:prenext get='next'/}</div>
+                </div>
+            </section>
+        </div>
+        <div class="pull-left">
+            <aside>
+                <h4>{dede:field runphp='yes' name = 'typeid'}
+                    switch(@me){
+                    case '3':
+                    @me='热点新闻推荐';
+                    break;
+                    case '15':
+                    @me='热点动态推荐';
+                    break;
+                    case '39':
+                    @me='热点案例推荐';
+                    break;
+                    case '33':
+                    @me='热点文章推荐';
+                    break;
+                    }{/dede:field}</h4>
+                <ul class="list-unstyled">
+                    {dede:arclist row="5" orderby="click" titlelen="50"}
+                    <li><a href="[field:arcurl/]">[field:title/]</a></li>
+                    {/dede:arclist}
+                </ul>
+                <div style="width: 260px;height: 3px;background-color: #EAEAEA;margin: 45px 0 59px;"></div>
+            </aside>
+            <div class="promotion">
+                <!-- Swiper -->
+                <div class="swiper-container gallery-top">
+                    <div class="swiper-wrapper">
+                        {dede:arclist typeid='40' channelid='1' addfields='promotion_url'}
+                        <div class="swiper-slide">
+                            <a href="[field:promotion_url/]" target="_blank"><img src="[field:litpic/]" alt="[field:title/]" width="260" height="260"></a>
+                        </div>
+                        {/dede:arclist}
+                    </div>
+                </div>
+                <div class="swiper-container gallery-thumbs">
+                    <div class="swiper-wrapper">
+                        {dede:arclist typeid='40'}
+                        <div class="swiper-slide"><img src="[field:litpic/]" alt="[field:title/]" width="50" height="50"></div>
+                        {/dede:arclist}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{dede:include filename="components/footer.htm"/}
+{dede:include filename="layout/script.htm"/}
+<script>
+  var galleryTop = new Swiper('.gallery-top', {
+    autoplay : 3000,
+    autoplayDisableOnInteraction : false,
+    spaceBetween: 10,
+  });
+  var galleryThumbs = new Swiper('.gallery-thumbs', {
+    spaceBetween: 10,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    touchRatio: 0.2,
+    slideToClickedSlide: true
+  });
+  galleryTop.params.control = galleryThumbs;
+  galleryThumbs.params.control = galleryTop;
+
+</script>
+</body>
+</html>

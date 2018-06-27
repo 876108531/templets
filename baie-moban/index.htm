@@ -1,0 +1,143 @@
+<!--首页-->
+<!DOCTYPE html>
+<html>
+<head>
+    {dede:include filename="layout-head.htm"/}
+    <link href="{dede:global.cfg_templets_skin/}/style/index.css" rel="stylesheet"/>
+    <style>
+        .navbar {
+            background-color: #333;
+        }
+        #baie-navbar .baieNav-index {
+            font-size: 16px;
+            padding-bottom: 8px;
+        }
+        #baie-navbar .baieNav-index+.under_line {
+            display: block;
+        }
+        .triangle {
+            width: 0;
+            height: 0;
+            border-top: 2em solid transparent;
+            border-right: 3.7em solid rgba(255,255,255,0.7);
+            border-bottom: 2em solid transparent;
+            position: absolute;
+            top: .7em;
+            left: 12.5em;
+        }
+        /**.baie-video {
+            position: relative;
+            width: 960px;
+            margin: 37px auto;
+        }
+        .baie-video>.video-btn {
+            position: absolute;
+            top: 220px;
+            left: 430px;
+            z-index: 2000;
+        }
+        .b-container {
+          padding-right: 15px;
+          padding-left: 15px;
+          margin-right: auto;
+          margin-left: auto;
+        }**/
+    </style>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+{dede:include filename="banner.htm"/}
+
+<section class="home-body">
+    <div class="index" style="background-color: #FFF">
+        <div class="baie-box1">
+            <div class="jumbotron">
+                <div class="text-center">
+                    {dede:arclist idlist='103' titlelen='80' channelid='1' addfields='body,pioneer_body' titlelen="100"}
+                    <h1>[field:title/]</h1>
+                    <p class="font-gray" style="width: 1160px;margin: 62px auto 0">[field:pioneer_body/]</p>
+                    {/dede:arclist}
+                    {dede:type typeid='13'}
+                    <a class="btn btn-default btn-more font-gray" href="[field:typelink/]" target="_blank">点击查看更多</a>
+                    {/dede:type}
+                    <div class="baie-video">
+                        <img class="video-btn" src="{dede:global.cfg_templets_skin/}/icon/btn_play.png" onclick="playPause()"/>
+                        <video id="video-index" width="960" height="540" poster="/uploads/baie/movie.png">
+                            <source src="https://static.meiguipai.net/video/the_song_for_baie.mp4" type="video/mp4">
+                            您的浏览器不支持 video 标签。
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="baie-box2">
+            <div class="jumbotron" style="background-image: url('/uploads/baie/index_back_pioneer.png');background-repeat:  no-repeat;background-size: cover;">
+                <div class="font-white text-center">
+                    <h1>创业案例</h1>
+                    <!--<div class="under-line"></div>-->
+                    {dede:arclist idlist='104' channelid='1' addfields='body,pioneer_body'}
+                    <p class="line-clamp-4" style="width: 1160px;margin: 0 auto 38px">[field:pioneer_body/]</p>
+                    {/dede:arclist}
+                    <div>
+                        {dede:type typeid='32'}
+                        <a class="btn btn-default btn-more font-white" href="[field:typelink /]" target="_blank">点击查看更多</a>
+                        {/dede:type}
+                    </div>
+                    <div style="min-width: 1090px;text-align: center">
+                        {dede:arclist typeid = '39' limit = '0, 3' channelid='1' addfields='pioneer_body' titlelen="100"}
+                        <a href="[field:arcurl/]" class="list-box">
+                            <div class="box-bgImg" style="background-image: url([field:litpic/])">
+                              	<div class="list-box-text">
+                                  <h1  class="line-clamp-1">[field:title/]</h1>
+                                  <p class="line-clamp-2">[field:description/]</p>
+                                </div>
+                            </div>
+                        </a>
+                        {/dede:arclist}
+                    </div>
+                </div>
+            </div>
+            <!--<div class="list" style="min-width: 1040px;">
+
+            </div>-->
+        </div>
+        <div class="baie-box3">
+            <div>
+                <div class="b-container">
+                    <h1 class="text-center"><img src="{dede:global.cfg_templets_skin/}/icon/Title-baieNews.png" alt="标题"></h1>
+                    <div class="row" style="margin: 80px auto;">
+                        {dede:arclist typeid = '3' limit = '0, 4'}
+                        <div class="col-xs-12 col-md-6 column">
+                            <div class="thumbnail" style="background: url([field:litpic/]) no-repeat;background-size: cover;padding: 0;">
+                                <a href="[field:arcurl/]" class="btn btn-default pull-left" style="margin: 44% 0 0 57px">了解详情</a>
+                                <div class="caption pull-right">
+                                    <!--<div class="triangle"></div>-->
+                                    <h1>[field:shorttitle/]</h1>
+                                    <h3>[field:title/]</h3>
+                                    <p class="line-clamp-4" style="overflow: hidden;">[field:description/]</p>
+                                </div>
+                            </div>
+                        </div>
+                        {/dede:arclist}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{dede:include filename="foot.htm"/}
+
+{dede:include filename="layout-foot.htm"/}
+<script>
+  var myVideo=$("#video-index");
+
+  function playPause() {
+    if (myVideo[0].paused){
+      myVideo[0].play();
+      $(".video-btn").addClass("hidden");
+      myVideo.prop("controls", true);
+    }
+  }
+</script>
+</body>
+</html>

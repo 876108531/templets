@@ -1,0 +1,89 @@
+<img style="display:none;" src="/skin/images/logoo.png" alt="{dede:global.cfg_webname/}" />
+<div class="zhidingUP"></div>
+<div class='zhiding'></div>
+<div id="navToggle"> <span></span> <span></span> <span></span> </div>
+<div id="mobileNav">
+  <ul>
+    <li> <a href="/">首页</a> </li>
+    <li> {dede:type typeid='13'}<a href="javascript:;">[field:typename /]</a>{/dede:type}
+      <div class="nav2"> 
+        {dede:channel    typeid ='13' }
+        <div class="nav2-list"> <a href="[field:typelink/]">[field:typename/]</a> </div>
+        {/dede:channel}
+         </div>
+    </li>
+    
+   
+       <li> {dede:type typeid='1'}<a href="javascript:;">[field:typename /]</a>{/dede:type}
+      <div class="nav2"> 
+               {dede:channel    typeid ='1'   }
+        <div class="nav2-list"> <a href="[field:typelink/]">[field:typename/]</a> </div>
+        {/dede:channel}
+         </div>
+    </li>
+    
+        
+       
+    <li> {dede:type typeid='30'}<a href="[field:typeurl/]">[field:typename /]</a>{/dede:type}</li>
+
+   
+    <li> {dede:type typeid='4'}<a href="javascript:;">[field:typename /]</a>{/dede:type}
+      <div class="nav2"> 
+               {dede:channel    typeid ='4'                   }
+        <div class="nav2-list"> <a href="[field:typelink/]">[field:typename/]</a> </div>
+        {/dede:channel}
+         </div>
+    </li>
+    
+    
+    <li> {dede:type typeid='5'}<a href="javascript:;">[field:typename /]</a>{/dede:type}
+      <div class="nav2"> 
+              {dede:channel    typeid ='5'                   }
+        <div class="nav2-list"> <a href="[field:typelink/]">[field:typename/]</a> </div>
+        {/dede:channel}
+         </div>
+    </li>
+     <li> {dede:type typeid='6'}<a href="javascript:;">[field:typename /]</a>{/dede:type}
+      <div class="nav2"> 
+              {dede:channel    typeid ='6'                   }
+        <div class="nav2-list"> <a href="[field:typelink/]">[field:typename/]</a> </div>
+        {/dede:channel}
+         </div>
+    </li>
+    
+       <li> {dede:type typeid='25'}<a href="javascript:;">[field:typename /]</a>{/dede:type}
+      <div class="nav2"> 
+              {dede:channel    typeid ='25'                   }
+        <div class="nav2-list"> <a href="[field:typelink/]">[field:typename/]</a> </div>
+        {/dede:channel}
+         </div>
+    </li>
+    
+  
+
+  </ul>
+</div> 
+<header class="header">
+  <div class="top">
+    <div class="top-l"> <img src="/skin/images/phone.png" alt="电话图片" /> <span>400-685-8885</span> </div>
+    <div class="top-r"> <a href="javascript:;">关于我们</a> <a href="javascript:;" class="show-ewm">关注：<img src="/skin/images/weixin1.png" alt="微信图片" /></a> </div>
+  </div>
+</header>
+<nav class="nav">
+  <div class="nav-box">
+    <div class="nav-l"> <a href="/"><img src="/skin/images/logo.png" alt="百e国际品牌图" /></a> </div>
+    <ul class="nav-r">
+      <li> <a href="/">首页</a> </li>
+     {dede:channelartlist  typeid='top' } 
+      <li class="down"> <a href='{dede:field name='typeurl'/}'>{dede:field name='typename'/}</a>
+        <div class="menu"> 
+      {dede:channel type='son' noself='yes' }
+          <div class="menu-list"> <a href='[field:typelink/]'>[field:typename/]</a> </div>
+          {/dede:channel}
+           </div>
+      </li>
+    {/dede:channelartlist}
+    </ul>
+  </div>
+ 
+</nav>

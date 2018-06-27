@@ -1,0 +1,376 @@
+<!--走进百e-->
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="https://cdn.meiguipai.net/baieweb/assets/static/favicon.ico">
+    <link rel="shortcut icon" href="https://cdn.meiguipai.net/baieweb/assets/static/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="keywords" content="{dede:global.cfg_keywords/}" />
+    <meta name="description" content="{dede:global.cfg_description/}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+    <link href="/skin/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/skin/css/swiper-3.3.1.min.css" />
+    <link href="{dede:global.cfg_templets_skin/}/style/yrjf.css" rel="stylesheet"/>
+    <link href="{dede:global.cfg_templets_skin/}/style/app.css" rel="stylesheet"/>
+    <link href="{dede:global.cfg_templets_skin/}/style/timeLine.css" rel="stylesheet">
+
+    <!-- baie.com.cn Baidu tongji analytics -->
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?64523922e3a0bb8fdfc9c7e9d61c0feb";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?c4c3efdacc727de600df4d221b325ab1";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+    <style>
+        .container, .container-fluid {
+            min-width: 1200px;
+        }
+        .baie_honor {
+            margin: 81px 0 0 0;
+            padding: 0;
+            width: 1160px;
+            height: 310px;
+            overflow: hidden;
+        }
+        .walk-swiper-container {
+            height: 300px;
+            position: relative;
+        }
+        .walk-swiper-container .swiper-slide {
+            width: 500px;
+            height: 220px;
+            font-size: 18px;
+            background: #fff;
+            border: 1px #EAEAEA solid;
+        }
+        .walk-swiper-container .swiper-slide img {
+            vertical-align: top;
+            display: inline-block;
+            margin: 60px 30px 0;
+            width: 150px;
+            height: 100px;
+        }
+        .walk-swiper-container .swiper-slide .right {
+            display: inline-block;
+            width: 240px;
+            margin-top: 33px;
+        }
+        .walk-swiper-container .swiper-slide p {
+            color: #666666;
+            line-height: 36px;
+            margin-top: 12px;
+        }
+        .walk-swiper-container .walk-swiper-scrollbar{
+            height: 5px;
+            width: 100%;
+        }
+        .swiper-button-prev {
+            top: 110px;
+            background-image: url("{dede:global.cfg_templets_skin/}/icon/btn-left.png");
+        }
+        .swiper-button-next {
+            top: 110px;
+            background-image: url("{dede:global.cfg_templets_skin/}/icon/btn-right.png");
+        }
+        .walk-swiper-container .swiper-scrollbar-drag {
+            height: 10px;
+            background: linear-gradient(135deg,#FF9343,#EA5503);
+            border-radius: 0;
+        }
+        .walk-swiper-container .swiper-scrollbar-drag:hover {
+            cursor: pointer;
+        }
+    </style>
+    <style>
+        .walkInBaie-scaleBox {
+            position: relative;
+        }
+        .walkInBaie-scaleBox:hover {
+            top: -15px;
+            left: -15px;
+            background: linear-gradient(135.8deg,rgba(255,147,67,1),rgba(234,85,3,1));
+            box-shadow: 0 10px 20px 0 rgba(189,189,189,0.5);
+            z-index: 100;
+        }
+        .scaleBox-big {
+            text-align: start;
+            color: #FFF;
+        }
+        .scaleBox-big p {
+            font-size: 28px;
+        }
+        .col-xs-3 .walkInBaie-scaleBox {
+             width: 290px;
+             height: 290px;
+         }
+        .col-xs-3 .walkInBaie-scaleBox:hover {
+            width: 320px;
+            height: 320px;
+        }
+        .col-xs-3 .scaleBox-big {
+            padding: 60px 0 0 28px;
+        }
+        .col-xs-3 .scaleBox-big .under_line {
+            margin: 28px 0 25px 0;
+        }
+        .col-xs-3 .scaleBox-big p {
+            width: 196px;
+        }
+        .col-xs-6 .walkInBaie-scaleBox {
+            width: 580px;
+            height: 290px;
+        }
+        .col-xs-6 .walkInBaie-scaleBox:hover {
+            width: 642px;
+            height: 320px;
+        }
+        .col-xs-6 .scaleBox-small {
+            padding: 84px 0 0 60px
+        }
+        .col-xs-6 .scaleBox-big {
+            padding: 51px 0 0 70px;
+        }
+        .col-xs-6 .scaleBox-big .under_line {
+            margin: 28px 0 25px 0;
+        }
+        .col-xs-6 .scaleBox-big p {
+            width: 504px;
+        }
+    </style>
+    <style>
+      .navbar {
+            background-color: #333;
+        }
+        #baie-navbar .baieNav-walkInBaie {
+            font-size: 16px;
+            padding-bottom: 8px;
+        }
+        #baie-navbar .baieNav-walkInBaie+.under_line {
+            display: block;
+        }
+    </style>
+</head>
+<body style="background:#f2f2f2">
+{dede:include filename="head.htm"/}
+<section class="top-nav" style="background-color: #FFF">
+    <div class="walkIn_box1">
+        <div class="container">
+            <div class="row">
+                <p class="text-center" style="margin: 80px 0 110px;"><img src="{dede:global.cfg_templets_skin/}/icon/Title-walkInBaie1.png" alt="标题"></p>
+                <div class="thumbnail clearfix" style="background-color: #F4F4F4;border-width: 0;border-radius: 0">
+                    <img class="pull-left " src="/uploads/baie/walkInBaie_img_introduce.jpg" alt="企业配图" style="width: 540px;height: 410px;margin: -37px 120px 37px 40px;border-radius: 10px">
+                    <div class="caption pull-left" style="width: 412px">
+                        <h2 style="margin-top: 60px">关于企业</h2>
+                        <div style="width: 76px;height: 3px;background-color: #333;margin: 30px 0 18px"></div>
+                        {dede:arclist idlist='105' channelid='1' addfields='body'}
+                        <p><a href="[field:arcurl/]">[field:description/]</a></p>
+                        {/dede:arclist}
+                    </div>
+                </div>
+                <div class="baie_honor" style="">
+                    <div class="walk-swiper-container swiper-container-horizontal">
+                        <div class="swiper-wrapper">
+                            {dede:arclist typeid="31" channelid='1' addfields='body'}
+                            <div class="swiper-slide">
+                                <img src="[field:litpic/]" alt="图片">
+                                <div class="right">
+                                    <h2>[field:title/]</h2>
+                                    <p class="line-clamp-3">[field:description/]</p>
+                                </div>
+                            </div>
+                            {/dede:arclist}
+                        </div>
+                        <!-- Add Scrollbar -->
+                        <div class="walk-swiper-scrollbar"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="walkIn_box2">
+        <div class="container-fluid" style="height: 100%; width:100%; background: url('/uploads/baie/walkInBaie_back_culture.png') no-repeat; background-size: cover;">
+            <div class="row" style="width: 1164px">
+                <div class="col-xs-6 col-md-6 column">
+                    <div class="walkInBaie-scaleBox">
+                        <div class="scaleBox-small">
+                            <h1>企业文化</h1>
+                            <h5>corporate culture</h5>
+                            <div class="under_line b-color-Orange"></div>
+                        </div>
+                        <div class="scaleBox-big hidden">
+                            <h1>企业文化</h1>
+                            <div class="under_line b-color-white"></div>
+                            {dede:arclist idlist='76' channelid='1' addfields='body'}
+                            <p>[field:description/]</p>
+                            {/dede:arclist}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-md-3 column">
+                    <div class="walkInBaie-scaleBox">
+                        <div class="scaleBox-small">
+                            <img src="{dede:global.cfg_templets_skin/}/icon/icon-mission.png" alt="使命">
+                            <h3>使命</h3>
+                        </div>
+                        <div class="scaleBox-big hidden">
+                            <h1>使命</h1>
+                            <div class="under_line b-color-white"></div>
+                            {dede:arclist idlist='80' channelid='1' addfields='body'}
+                            <p>[field:description/]</p>
+                            {/dede:arclist}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-md-3 column">
+                    <div class="walkInBaie-scaleBox">
+                        <div class="scaleBox-small">
+                            <img src="{dede:global.cfg_templets_skin/}/icon/icon-idea.png" alt="理念">
+                            <h3>理念</h3>
+                        </div>
+                        <div class="scaleBox-big hidden">
+                            <h1>理念</h1>
+                            <div class="under_line b-color-white"></div>
+                            {dede:arclist idlist='77' channelid='1' addfields='body'}
+                            <p>[field:description/]</p>
+                            {/dede:arclist}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-md-3 column">
+                    <div class="walkInBaie-scaleBox">
+                        <div class="scaleBox-small">
+                            <img src="{dede:global.cfg_templets_skin/}/icon/icon-vision.png" alt="愿景">
+                            <h3>愿景</h3>
+                        </div>
+                        <div class="scaleBox-big hidden">
+                            <h1>愿景</h1>
+                            <div class="under_line b-color-white"></div>
+                            {dede:arclist idlist='78' channelid='1' addfields='body'}
+                            <p>[field:description/]</p>
+                            {/dede:arclist}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-md-3 column">
+                    <div class="walkInBaie-scaleBox">
+                        <div class="scaleBox-small">
+                            <img src="{dede:global.cfg_templets_skin/}/icon/icon-purpose.png" alt="宗旨">
+                            <h3>宗旨</h3>
+                        </div>
+                        <div class="scaleBox-big hidden">
+                            <h1>宗旨</h1>
+                            <div class="under_line b-color-white"></div>
+                            {dede:arclist idlist='79' channelid='1' addfields='body'}
+                            <p>[field:description/]</p>
+                            {/dede:arclist}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-6 column">
+                    <div class="walkInBaie-scaleBox">
+                        <div class="scaleBox-small">
+                            <h1>核心价值观</h1>
+                            <h5>corporate culture</h5>
+                            <div class="under_line b-color-Orange"></div>
+                        </div>
+                        <div class="scaleBox-big hidden">
+                            <h1>核心价值观</h1>
+                            <div class="under_line b-color-white"></div>
+                            {dede:arclist idlist='81' channelid='1' addfields='body'}
+                            <p>[field:description/]</p>
+                            {/dede:arclist}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="event-data" class="hidden">
+        {dede:arclist typeid="42" channelid='1' addfields='eventtime2,body' isweight='y' orderby='weight'}
+        <li data-eventtime="[field:eventtime2/]">
+            <div class="v-line"></div>
+            <div class="big-dot"></div>
+            <div class="s-dot"></div>
+            <div class="event-line"></div>
+
+            <h2>[field:title/]</h2>
+            <div>
+                <img src="[field:litpic/]" alt="宣传图">
+            </div>
+            <p>[field:description/]</p>
+        </li>
+        {/dede:arclist}
+    </div>
+    <div class="walkIn_box3">
+        <div class="container">
+            <div class="row">
+                <p class="text-center" style="margin: 90px 0 130px;"><img src="{dede:global.cfg_templets_skin/}/icon/Title-walkInBaie2.png" alt="标题"></p>
+                <div class="box">
+                    <div style="position: relative">
+                        <ul class="event_year over-hidden">
+                        </ul>
+                        <div class="big-more hidden" style="background: url('{dede:global.cfg_templets_skin/}/icon/btn-more.png') no-repeat;background-position: center center;"></div>
+                    </div>
+                    <ul class="event_list">
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+{dede:include filename="foot.htm"/}
+<script src="/skin/css/jquery-1.10.1.min.js"></script>
+<script src="/skin/css/my_plugin-1.1.1.js"></script>
+<!--<script src="/skin/css/jquery.easing.js"></script>-->
+<script src="/skin/css/mousewheel.js"></script>
+<script src="/skin/css/bootstrap.min.js"></script>
+<script src="/skin/css/swiper-3.3.1.jquery.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/yrjf.js" id="JS" page="home"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/validation.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/app.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/bigEnevtTime.js"></script>
+<script>
+  var wswiper = new Swiper('.walk-swiper-container', {
+    scrollbar: '.walk-swiper-scrollbar',
+    scrollbarHide: false,
+    scrollbarDraggable: true,
+    slidesPerView: 'auto',
+    spaceBetween: 40,
+    slidesOffsetBefore: 120,
+    nextButton: '.swiper-button-prev',
+    prevButton: '.swiper-button-next',
+  });
+</script>
+<script>
+    $(".walkInBaie-scaleBox").hover(
+      function(){
+        $(this).children(".scaleBox-small").addClass("hidden");
+        $(this).children(".scaleBox-big").removeClass("hidden");
+      },
+      function(){
+        $(this).children(".scaleBox-big").addClass("hidden");
+        $(this).children(".scaleBox-small").removeClass("hidden");
+      }
+    );
+</script>
+</body>
+</html>

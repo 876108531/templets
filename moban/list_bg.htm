@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<!--<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0">-->
+<title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+<link href="/skin/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="/skin/css/swiper-3.3.1.min.css" />
+<link href="/skin/css/yrjf.css" rel="stylesheet">
+<!--[if IE]>
+			<script src="/skin/css/respond.js"></script>
+			<script src="/skin/css/html5.js"></script>
+			<link href="/skins/tyle/ie.yrjf.css" rel="stylesheet">
+		<![endif]-->
+
+<!-- baie.com.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "https://hm.baidu.com/hm.js?64523922e3a0bb8fdfc9c7e9d61c0feb";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "https://hm.baidu.com/hm.js?c4c3efdacc727de600df4d221b325ab1";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+{dede:include filename="head.htm"/}
+
+<section class="business-body">
+  <section class="in-banner"> </section>
+
+  <div class="box box4">
+    <div class="content1440">
+      <div class="titlePage"> <span class="cn">{dede:field name='typename'/}</span> <span class="en">Related dynamic</span> </div>
+      <div class="Related row">
+        <ul>
+        
+        {dede:list pagesize ='9'}
+          <li class="col-sm-4"> <a href="[field:arcurl/]">
+            <div class="pic"> <img src="[field:picname/]" /> </div>
+            <summary class="summary">
+              <div class="title"> [field:title/] </div>
+              <div class="text"> [field:description function="cn_substr(@me,600)"/]... </div>
+            </summary>
+            </a> </li>
+            {/dede:list}
+            
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  
+   
+  <div class="box box3">
+    <div class="content1440">
+      <div class="titlePage"> <span class="cn">联系我们</span> <span class="en">contact us </span> </div>
+      <div class="contact row">
+        <ul>
+          <li class="col-sm-4">
+            <div class="pic1 icon"></div>
+            <div class="text"> 浙江杭州市江干下沙美达晓城天地1幢22楼 <a href="http://j.map.baidu.com" target="_blank">百度地图</a> </div>
+          </li>
+          <li class="col-sm-4">
+            <div class="pic2 icon"></div>
+            <div class="text"> <span><a href="tel:0516-8337 6282" style="">400-685-8885</a></span> 服务时间：9:00~18:00 </div>
+          </li>
+          <li class="col-sm-4">
+            <div class="pic3 icon"></div>
+            <div class="text"><a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="4223262f2b2c027374716c212d2f">[email protected]</a><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div> 
+</section>
+{dede:include filename="footer.htm"/}
+<script src="/skin/css/jquery-1.10.1.min.js"></script> 
+<script src="/skin/css/jquery.easing.js"></script> 
+<script src="/skin/css/bootstrap.min.js"></script> 
+<script src="/skin/css/yrjf.js" id="JS" page="business"></script> 
+<script type="text/javascript">
+			$(document).ready(function(){
+				if(9!=''){
+					$('.in-banner').append('<img src="/skin/images/business-banner9.jpg" alt="" />');
+
+				};
+				if(9===10){
+					$('.Scope').addClass('Scope2');
+
+				};
+
+
+				
+			})
+		</script>
+  {dede:global.fenxiang/}
+</body>
+</html>

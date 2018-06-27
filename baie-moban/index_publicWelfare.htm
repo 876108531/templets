@@ -1,0 +1,137 @@
+<!--百e公益-->
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="https://cdn.meiguipai.net/baieweb/assets/static/favicon.ico">
+    <link rel="shortcut icon" href="https://cdn.meiguipai.net/baieweb/assets/static/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="keywords" content="{dede:global.cfg_keywords/}" />
+    <meta name="description" content="{dede:global.cfg_description/}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+    <link href="/skin/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/skin/css/swiper-3.3.1.min.css" />
+    <link href="{dede:global.cfg_templets_skin/}/style/yrjf.css" rel="stylesheet"/>
+    <link href="{dede:global.cfg_templets_skin/}/style/app.css" rel="stylesheet"/>
+    <!--[if IE]>
+    <script src="/skin/css/respond.js"></script>
+    <script src="/skin/css/html5.js"></script>
+    <![endif]-->
+
+    <!-- baie.com.cn Baidu tongji analytics -->
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?64523922e3a0bb8fdfc9c7e9d61c0feb";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?c4c3efdacc727de600df4d221b325ab1";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+    <style>
+        .btn-more {
+            width: 160px;
+            height: 48px;
+            border-radius: 10px;
+            border: 1px #fff solid;
+            color: #fff;
+            line-height: 44px;
+            padding: 0;
+        }
+    </style>
+    <style>
+      .navbar {
+            background-color: #333;
+        }
+        #baie-navbar .baieNav-publicWelfare {
+            font-size: 16px;
+            padding-bottom: 8px;
+        }
+        #baie-navbar .baieNav-publicWelfare+.under_line {
+            display: block;
+        }
+        @media screen and (min-width: 0px) and (max-width: 1300px) {
+            .publicWelfare-box1 .list li {
+                margin: 0 -2px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<section class="top-nav">
+    <div class="publicWelfare-box1">
+        <div class="title text-center">
+           <img src="{dede:global.cfg_templets_skin/}/icon/Title-publicWelfare1.png" alt="标题">
+        </div>
+        <div class="list" style="background-image: url('/uploads/baie/publicWelfare_back.png')">
+            <ul>
+                {dede:arclist typeid = '38' limit = '0, 3'}
+                <li>
+                    <a href="[field:arcurl/]" style="display: inline-block;height: 600px">
+                        <div class="img">
+                            <img src="[field:litpic/]" alt="缩略图" style="width: 350px;height: inherit;border-radius: 10px 10px 0 0;">
+                        </div>
+                        <h3>[field:title/]</h3>
+                        <p>[field:description/]</p>
+                    </a>
+                </li>
+                {/dede:arclist}
+            </ul>
+            <div class="text-center">
+                {dede:type typeid='38'}<a href="[field:typelink/]" class="btn btn-more">查看更多</a>{/dede:type}
+            </div>
+        </div>
+    </div>
+    <div class="listbox pioneer-box4 clearfix">
+        <h1 class="text-center"><img src="{dede:global.cfg_templets_skin/}/icon/Title-publicWelfare2.png" alt="标题"></h1>
+        <ul>
+            {dede:list pagesize='4'}
+            <li class="item">
+                <a href="[field:arcurl/]">
+                    <div class="article-box clearfix">
+                        <div class="pull-left left-line"></div>
+                        <div class="pull-left left">
+                            <h1>[field:pubdate function='strftime("%Y",@me)'/]</h1>
+                            <div class="under_line"></div>
+                            <h3>[field:pubdate function='strftime("%m",@me)'/]-[field:pubdate function='strftime("%d",@me)'/]</h3>
+                        </div>
+                        <div class="pull-left right">
+                            <h1>[field:title/]</h1>
+                            <p>[field:description/]</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            {/dede:list}
+        </ul>
+    </div>
+    <ul class="pagelist">
+        {dede:pagelist listitem="next" listsize="1" runphp=yes}
+        @me = preg_replace('/<a\shref=([\'"]?).+?\1/', '$0 class="nextpage"', @me);
+        {/dede:pagelist}
+    </ul>
+</section>
+{dede:include filename="foot.htm"/}
+<script src="/skin/css/jquery-1.10.1.min.js"></script>
+<!--<script src="/skin/css/jquery.easing.js"></script>-->
+<script src="/skin/css/bootstrap.min.js"></script>
+<script src="/skin/css/aos.js"></script>
+<script src="/skin/css/swiper-3.3.1.jquery.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-ias.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/yrjf.js" id="JS" page="home"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/validation.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.title/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<style type="text/css">
+	body {font-family: Verdana;FONT-SIZE: 12px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #footer {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+</style>
+<!-- baie.com.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "https://hm.baidu.com/hm.js?64523922e3a0bb8fdfc9c7e9d61c0feb";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body vlink="#333333" link="#333333">
+<h2 style="text-align: center; margin-top: 20px">{dede:global.cfg_webname/}站点地图 </h2>
+<center></center>
+<div id="nav"><a href="/"><strong>{dede:global.cfg_webname/}</strong></a>  &raquo; <a href="/sitemap.html">站点地图</a></div>
+<div id="content">
+<h3>最新文章</h3>
+<ul>
+{dede:arclist row='10000' col='1'  orderby=pubdate}
+<li><a href="[field:arcurl /]">[field:title /]</a></li>
+{/dede:arclist}
+</ul>
+</div>
+<div id="content">
+<h3>分类目录</h3>
+<ul>
+        {dede:channelartlist  cacheid='channelsonlist'}  
+        <h3><a href="{dede:field name='typeurl'/}" >{dede:field name='typename'/}</a></h3> 
+            <ul> 
+                {dede:channel type='son' row='10' noself='yes'}  
+                <li><a href='[field:typeurl/]' [field:rel/]><span>[field:typename/]</span></a></li>{/dede:channel}  
+            </ul> 
+        {/dede:channelartlist}  
+</ul>
+</div>
+<div id="footer">查看网站首页: <strong><a href="/"><strong>{dede:global.cfg_webname/}</strong></a></strong></div><br />
+<center>
+<div style="text-algin: center; font-size: 11px"></div>
+</center>
+</body>
+</html>

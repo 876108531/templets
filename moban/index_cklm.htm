@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<!--<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0">-->
+		<title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+		<link href="/skin/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="/skin/css/swiper-3.3.1.min.css" />
+		<link href="/skin/css/yrjf.css" rel="stylesheet">
+		<!--[if IE]>
+			<script src="/skin/css/respond.js"></script>
+			<script src="/skin/css/html5.js"></script>
+			<link href="/skins/tyle/ie.yrjf.css" rel="stylesheet">
+		<![endif]-->
+	<!-- baie.com.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "https://hm.baidu.com/hm.js?64523922e3a0bb8fdfc9c7e9d61c0feb";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+	<body  style="background:#f2f2f2">
+{dede:include filename="head.htm"/}
+			
+		<div class="in-banner">
+		<img src="/skin/images/chuangye.jpg" alt="百e创业栏目图" />
+		</div>
+		<section class="aboutUs-body">
+			<div class="content1440 about-us">
+				<div class="titlePage">
+					<span class="cn">{dede:field name='typename'/}</span>
+					
+				</div>
+				<div class="about-content" >
+					<div class="boxs box1">
+	<span class="tit" >{dede:field name='typename'/}</span>
+	<p>{dede:field.content/}</p>
+</div>
+
+				</div>
+			</div>
+		</section>
+		<section class="contactUs-body">
+			<div class="content1440 contact-us">
+				<div class="titlePage">
+					<span class="cn">联系我们</span>
+					<span class="en">CONTACT US</span>
+				</div>
+				<div class="contact">
+					<div class="boxs box1">
+						<div class="c-icon">
+							<img src="/skin/images/icon-contact1.png" alt="地址图标" />
+						</div>
+						<p>浙江杭州市江干区下沙美达晓城天地1幢22楼<P>
+						 <a href="http://j.map.baidu.com/" target="_blank">百度地图</a>
+					</div>
+					<div class="boxs box2 nth-child2">
+						<div class="c-icon">
+							<img src="/skin/images/icon-contact2.png" alt="电话图标" />
+						</div>
+						<p class="phone">400-685-8885</p>
+						<p>服务时间：9:00~16:00，,17:00~21:00</p>
+					</div>
+					<div class="boxs box3 lastChild">
+						<div class="c-icon">
+							<img src="/skin/images/icon-contact3.png" alt="邮箱图标" />
+						</div>
+						<p class="email">sunny@baie.com.cn</p><br/>
+                      <p class="email">yangaobo@baie.com.cn</p>
+                      
+					</div>
+				</div>
+				<div class="ly">
+					<img src="/skin/images/ly.png" alt="留言图标" />
+					<form id="form1" class="form-box-ly" name="from" action="/plus/diy.php" enctype="multipart/form-data" method="post">
+						<input type="hidden" name="action" value="post" />
+<input type="hidden" name="diyid" value="2" />
+<input type="hidden" name="do" value="2" />
+
+						<div class="input-box box1">
+							<label for="#lynr">留言内容：</label>
+							<div class="groups">
+							
+								<textarea name="field5" id="lynr" placeholder="提示：严禁发布含有联系方式和广告性质的内容，违者一律删除！"></textarea>
+								<span class="err-text txt"></span>
+								<span class="btn_Prompt Prompt-txt "></span>
+							</div>
+						</div>
+						<div class="input-c">
+							<div class="input-box box2">
+								<div class="b">
+									<label for="#xm">姓名：</label>
+									<div class="groups">
+										<input type="text" name="field1" id="xm" placeholder="请输入您的真实姓名" />
+										<span class="err-text text-user"></span>
+										<span class="btn_Prompt Prompt-user"></span>
+									</div>
+								</div>
+								<div class="b">
+									<label for="#phone">联系方式：</label>
+									<div class="groups">
+										<input type="text" name="field2" id="phone" placeholder="请输入您的手机号\座机号" />
+										<span class="err-text text-phone"></span>
+										<span class="btn_Prompt Prompt-phone "></span>
+									</div>
+								</div>
+							</div>
+							<div class="input-box box2">
+								<div class="b">
+									<label for="#gs">公司名称：<span>（选填）</span></label>
+									<input type="text" name="field3" id="gs" placeholder="请输入您所在的公司名称" />
+								</div>
+								<div class="b">
+									<label for="#post">职位：<span>（选填）</span></label>
+									<input type="text" name="field4" id="post" placeholder="请输入您的职位" />
+								</div>
+							</div>
+						</div>
+						<input type="hidden" name="dede_fields" value="field5,multitext;field1,text;field2,text;field3,text;field4,text" />
+<input type="hidden" name="dede_fieldshash" value="ec2583efe1f5cc450255772d6d5803d0" />
+						<div class="submit">
+							<input type="submit" value="提交留言" class="submit-btn" />
+							<span>提示：感谢您的支持，提交成功后工作人员将尽快与您取得联系！</span>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+{dede:include filename="footer.htm"/}
+
+		<section class="return_TK">
+			<div class="good">
+				<div class="round">
+				    <span class="noe"></span>
+				    <span class="tow"></span>
+				</div>
+			    <div class="title">
+			        <span class="t">资料上传成功</span>
+			        <span class="b">感谢您的支持</span>
+			    </div>
+			    <div class="btn-inputOk">
+			        确   定
+			    </div>
+			</div>
+			<div class="bg"></div>
+		</section>
+		
+		<script src="/skin/css/jquery-1.10.1.min.js"></script>
+		<script src="/skin/css/my_plugin-1.1.1.js"></script>
+		<script src="/skin/css/jquery.easing.js"></script>
+		<script src="/skin/css/mousewheel.js"></script>
+		<script src="/skin/css/bootstrap.min.js"></script>
+		<script src="/skin/css/swiper-3.3.1.jquery.min.js"></script>
+		<script src="/skin/css/yrjf.js" id="JS" page="contactUs"></script>
+		<script type="text/javascript">
+			
+			$(".return_TK .good .btn-inputOk").click(function(){
+				$(".return_TK").fadeOut();
+				$(".investmentDel-body").removeClass("blur");
+				$(".header,.nav,footer,.in-banner,.aboutUs-body,.contactUs-body").removeClass("blur");
+				$("textarea").val('')
+				$("#xm").val('')
+				$("#phone").val('')
+				$("#gs").val('')
+				$("#post").val('')
+				$(".btn_Prompt").removeClass("Correct")
+			})
+		</script>
+	</body>
+</html>
