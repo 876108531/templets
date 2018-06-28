@@ -1,0 +1,24 @@
+<!--热点推荐-对应栏目-->
+<aside>
+    <h4>{dede:field runphp='yes' name = 'typeid'}
+        switch(@me){
+        case '3':
+        @me='热点新闻推荐';
+        break;
+        case '15':
+        @me='热点动态推荐';
+        break;
+        case '39':
+        @me='热点案例推荐';
+        break;
+        case '33':
+        @me='热点文章推荐';
+        break;
+        }{/dede:field}</h4>
+    <ul class="list-unstyled">
+        {dede:arclist row="5" orderby="click" titlelen="50"}
+        <li><a href="[field:arcurl/]">[field:title/]</a></li>
+        {/dede:arclist}
+    </ul>
+    <div style="width: 260px;height: 3px;background-color: #EAEAEA;margin: 45px 0 59px;"></div>
+</aside>

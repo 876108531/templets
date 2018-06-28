@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    {dede:include filename="layout-head.htm"/}
+    {dede:include filename="layout/head.htm"/}
     <link href="{dede:global.cfg_templets_skin/}/style/index.css" rel="stylesheet"/>
     <style>
         .navbar {
@@ -25,29 +25,11 @@
             top: .7em;
             left: 12.5em;
         }
-        /**.baie-video {
-            position: relative;
-            width: 960px;
-            margin: 37px auto;
-        }
-        .baie-video>.video-btn {
-            position: absolute;
-            top: 220px;
-            left: 430px;
-            z-index: 2000;
-        }
-        .b-container {
-          padding-right: 15px;
-          padding-left: 15px;
-          margin-right: auto;
-          margin-left: auto;
-        }**/
     </style>
 </head>
 <body>
-{dede:include filename="head.htm"/}
-{dede:include filename="banner.htm"/}
-
+{dede:include filename="components/header.htm"/}
+{dede:include filename="components/banner.htm"/}
 <section class="home-body">
     <div class="index" style="background-color: #FFF">
         <div class="baie-box1">
@@ -55,14 +37,14 @@
                 <div class="text-center">
                     {dede:arclist idlist='103' titlelen='80' channelid='1' addfields='body,pioneer_body' titlelen="100"}
                     <h1>[field:title/]</h1>
-                    <p class="font-gray" style="width: 1160px;margin: 62px auto 0">[field:pioneer_body/]</p>
+                    <p class="font-gray line-clamp-4">[field:pioneer_body/]</p>
                     {/dede:arclist}
                     {dede:type typeid='13'}
-                    <a class="btn btn-default btn-more font-gray" href="[field:typelink/]" target="_blank">点击查看更多</a>
+                    <a class="btn btn-default btn-more font-gray" href="[field:typelink/]" target="_blank">查看更多</a>
                     {/dede:type}
                     <div class="baie-video">
                         <img class="video-btn" src="{dede:global.cfg_templets_skin/}/icon/btn_play.png" onclick="playPause()"/>
-                        <video id="video-index" width="960" height="540" poster="/uploads/baie/movie.png">
+                        <video id="video-index" poster="/uploads/baie/movie.png">
                             <source src="https://static.meiguipai.net/video/the_song_for_baie.mp4" type="video/mp4">
                             您的浏览器不支持 video 标签。
                         </video>
@@ -71,19 +53,19 @@
             </div>
         </div>
         <div class="baie-box2">
-            <div class="jumbotron" style="background-image: url('/uploads/baie/index_back_pioneer.png');background-repeat:  no-repeat;background-size: cover;">
+            <div class="jumbotron" style="background-image: url('/uploads/baie/index_back_pioneer.png');">
                 <div class="font-white text-center">
                     <h1>创业案例</h1>
                     <!--<div class="under-line"></div>-->
                     {dede:arclist idlist='104' channelid='1' addfields='body,pioneer_body'}
-                    <p class="line-clamp-4" style="width: 1160px;margin: 0 auto 38px">[field:pioneer_body/]</p>
+                    <p class="line-clamp-4 text">[field:pioneer_body/]</p>
                     {/dede:arclist}
                     <div>
                         {dede:type typeid='32'}
-                        <a class="btn btn-default btn-more font-white" href="[field:typelink /]" target="_blank">点击查看更多</a>
+                        <a class="btn btn-default btn-more font-white" href="[field:typelink /]" target="_blank">查看更多</a>
                         {/dede:type}
                     </div>
-                    <div style="min-width: 1090px;text-align: center">
+                    <div class="pioneer_box">
                         {dede:arclist typeid = '39' limit = '0, 3' channelid='1' addfields='pioneer_body' titlelen="100"}
                         <a href="[field:arcurl/]" class="list-box">
                             <div class="box-bgImg" style="background-image: url([field:litpic/])">
@@ -97,14 +79,11 @@
                     </div>
                 </div>
             </div>
-            <!--<div class="list" style="min-width: 1040px;">
-
-            </div>-->
         </div>
         <div class="baie-box3">
             <div>
                 <div class="b-container">
-                    <h1 class="text-center"><img src="{dede:global.cfg_templets_skin/}/icon/Title-baieNews.png" alt="标题"></h1>
+                    <h1 class="text-center"><img class="media-width100" src="{dede:global.cfg_templets_skin/}/icon/Title-baieNews.png" alt="标题"></h1>
                     <div class="row" style="margin: 80px auto;">
                         {dede:arclist typeid = '3' limit = '0, 4'}
                         <div class="col-xs-12 col-md-6 column">
@@ -125,9 +104,8 @@
         </div>
     </div>
 </section>
-{dede:include filename="foot.htm"/}
-
-{dede:include filename="layout-foot.htm"/}
+{dede:include filename="components/footer.htm"/}
+{dede:include filename="layout/script.htm"/}
 <script>
   var myVideo=$("#video-index");
 

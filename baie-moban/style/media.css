@@ -1,0 +1,48 @@
+@media (max-width: 750px) {
+    html, body {
+        min-width: auto;
+    }
+    h1 {
+        margin: 0;
+    }
+    footer .head {
+        width: 5.9rem;
+        padding: 0;
+    }
+    .media-width100 {
+        width: 100%;
+    }
+    .baie-box3 .row {
+        width: auto;
+    }
+    .swiper-box {
+        height: 2.56rem;
+    }
+    .swiper-box .swiper-slide img {
+        width: 100%;
+        min-width: 0;
+        height: 2.56rem;
+    }
+    footer .pull-left:first-child {
+        width: 100%;
+    }
+    footer .pull-left:nth-child(2) {
+        width: 100%;
+        margin: 0;
+    }
+    footer .pull-left:last-child {
+        width: 100%;
+    }
+    footer .foot {
+        width: 4.06rem;
+        margin: .6rem auto 0;
+        padding-top: 0;
+        border-top: 0 solid #666;
+    }
+    .foot {
+        height: auto;
+        font-size: .13rem;
+        padding: 0 0 .68rem;
+        text-align: center;
+    }
+}

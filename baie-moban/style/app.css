@@ -51,6 +51,21 @@ a {
 .baie-btn-more a:hover {
     color: inherit;
 }
+.navbar {
+    min-height: 44px;
+}
+.navbar-toggle {
+    padding: 6px 10px;
+}
+.navbar-brand {
+    height: 44px;
+    padding: 7px 15px;
+}
+.navbar>div {
+    max-width: 1200px;
+    height: 44px;
+    margin: auto
+}
 .navbar-inverse {
     background-color: #333;
     border-color: #333;
@@ -114,12 +129,11 @@ a {
 /*common END*/
 /*banner START*/
 .swiper-box {
-    /*height: 100%;*/
     height: 500px;
     background: #eee;
     font-size: 14px;
     color:#000;
-    margin: 0;
+    margin: 44px 0 0 0;
     padding: 0;
 }
 .swiper-box .swiper-container {

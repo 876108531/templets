@@ -2,55 +2,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="icon" href="https://cdn.meiguipai.net/baieweb/assets/static/favicon.ico">
-    <link rel="shortcut icon" href="https://cdn.meiguipai.net/baieweb/assets/static/favicon.ico">
-    <meta charset="utf-8">
-    <meta name="baidu-site-verification" content="ZECtUL3lAy"/>
-    <meta name="description" content="{dede:global.cfg_description/}"/>
-    <meta name="keywords" content="{dede:global.cfg_keywords/}"/>
-    <meta name="author" content="order by dedesos.com"/>
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{dede:global.cfg_webname/}</title>
-    <link href="/skin/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="/skin/css/swiper-3.3.1.min.css" rel="stylesheet"/>
-    <link href="{dede:global.cfg_templets_skin/}/style/yrjf.css" rel="stylesheet"/>
-    <link href="{dede:global.cfg_templets_skin/}/style/app.css" rel="stylesheet"/>
-  <link href="{dede:global.cfg_templets_skin/}/style/pioneer.css" rel="stylesheet"/>
-
-    <script language="javascript" type="text/javascript" src="{dede:global.cfg_cmsurl/}/include/dedeajax2.js"></script>
-    <script language="javascript" type="text/javascript">
-      function multi(pagenum, tagid) {
-        var taget_obj = document.getElementById(tagid);
-        var taget_obj_page = document.getElementById("page_" + tagid);
-        myajax = new DedeAjax(taget_obj, false, false, '', '', '');
-        myajax.SendGet2("/plus/arcmulti.php?mtype=0&pnum=" + pagenum + '&tagid=' + tagid);
-        myajax = new DedeAjax(taget_obj_page, false, false, '', '', '');
-        myajax.SendGet2("/plus/arcmulti.php?mtype=1&pnum=" + pagenum + '&tagid=' + tagid);
-        DedeXHTTP = null;
-      }
-    </script>
-
-    <!-- baie.com.cn Baidu tongji analytics -->
-    <script>
-      var _hmt = _hmt || [];
-      (function () {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?64523922e3a0bb8fdfc9c7e9d61c0feb";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-      })();
-    </script>
-    <script>
-      var _hmt = _hmt || [];
-      (function () {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?c4c3efdacc727de600df4d221b325ab1";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-      })();
-    </script>
+    {dede:include filename="layout/head.htm"/}
+    <link href="{dede:global.cfg_templets_skin/}/style/pioneer.css" rel="stylesheet"/>
     <style>
         a {
             color: inherit;
@@ -59,111 +12,9 @@
         a:hover {
             color: inherit;
         }
-
-        /**.pioneer-box3-swiper {
-            width: 1200px;
-            height: 700px;
-            margin-top: -340px;
-            background: #FFF;
-            box-shadow: 0 15px 40px 0 #BDBDBD;
-            border-radius: 10px;
-        }
-
-        .pioneer-box3-swiper .swiper-slide {
-            padding: 0 100px;
-        }
-
-        .pioneer-box3-swiper .photo {
-            max-width: 500px;
-    		max-height: 600px;
-    		margin: 50px 60px 0 0;
-        }
-
-        .pioneer-box3-swiper .detail {
-            width: 411px;
-            margin-top: 126px;
-        }
-
-        .pioneer-box3-swiper h1 {
-            font-size: 40px;
-            margin-top: 141px;
-            height: 90px;
-        }
-
-        .pioneer-box3-swiper h4 {
-            margin: 15px 0 27px 0;
-            color: #BDBDBD;
-        }
-        .pioneer-box3-swiper .resume {
-            font-size: 24px;
-            color: #666;
-        }
-
-        .pioneer-box3-swiper-avatar {
-            width: 430px;
-            position: relative;
-            top: -514px;
-            left: 270px;
-        }
-        .pioneer-box3-swiper-avatar .swiper-slide {
-            width: 70px;
-            height: 70px;
-            z-index: 200;
-            border-radius: 35px;
-        }
-        .pioneer-box3-swiper-avatar .active-avatar {
-            background: #EA5503;
-            opacity: 0.3;
-        }
-      
-      .pioneer-box1 .detail {
-            position: relative;
-            z-index:200;
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
-        }
-      .pioneer-box1 .detail>img {
-            height: 100%
-        }
-        .pioneer-box1 .btn-box>div {
-            position: relative;
-            z-index: 200;
-        }**/
-        /**.btn-box {
-            position: relative;
-        }**/
         .btn-box>div {
             z-index: 10;
         }
-        /**.dotted {
-            width: 1011px;
-            height: 230px;
-            position: absolute;
-            z-index: 20;
-        }
-        .dottedR {
-            left: 105px;
-            top: 80px;
-        }
-        .dottedL {
-            left: -82px;
-            top: -4px;
-            height: 180px;
-            width: 1090px;
-        }**/
     </style>
     <style>
       .navbar {
@@ -180,7 +31,7 @@
     </style>
 </head>
 <body>
-{dede:include filename="head.htm"/}
+{dede:include filename="components/header.htm"/}
 <div class="pioneer-box1 top-nav" style="margin-top: 130px">
     <h1 class="text-center"><img
             src="{dede:global.cfg_templets_skin/}/icon/Title-baiePioneer1.png" alt="标题"></h1>
@@ -286,8 +137,7 @@
                     <div class="pull-left left">
                         <h1>[field:pubdate function='strftime("%Y",@me)'/]</h1>
                         <div class="under_line"></div>
-                        <h3>[field:pubdate function='strftime("%m",@me)'/]-[field:pubdate
-                            function='strftime("%d",@me)'/]</h3>
+                        <h3>[field:pubdate function='strftime("%m",@me)'/]-[field:pubdate function='strftime("%d",@me)'/]</h3>
                     </div>
                     <div class="pull-left right">
                         <h1>[field:title/]</h1>
@@ -304,16 +154,8 @@
     @me = preg_replace('/<a\shref=([\'"]?).+?\1/', '$0 class="nextpage"', @me);
     {/dede:pagelist}
 </ul>
-{dede:include filename="foot.htm"/}
-<script src="/skin/css/jquery-1.10.1.min.js"></script>
-<!--<script src="/skin/css/jquery.easing.js"></script>-->
-<script src="/skin/css/bootstrap.min.js"></script>
-<script src="/skin/css/aos.js"></script>
-<script src="/skin/css/swiper-3.3.1.jquery.min.js"></script>
-<script src="{dede:global.cfg_templets_skin/}/js/jquery-ias.min.js"></script>
-<script src="{dede:global.cfg_templets_skin/}/js/yrjf.js" id="JS" page="home"></script>
-<script src="{dede:global.cfg_templets_skin/}/js/validation.js"></script>
-<script src="{dede:global.cfg_templets_skin/}/js/app.js"></script>
+{dede:include filename="components/footer.htm"/}
+{dede:include filename="layout/script.htm"/}
 <script>
   $(document).ready(function(){
     $('.pioneer-box3-swiper-avatar .swiper-slide:first-child').addClass('active-avatar');

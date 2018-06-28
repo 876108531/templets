@@ -2,43 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="icon" href="https://cdn.meiguipai.net/baieweb/assets/static/favicon.ico">
-    <link rel="shortcut icon" href="https://cdn.meiguipai.net/baieweb/assets/static/favicon.ico">
-    <meta charset="utf-8">
-    <meta name="keywords" content="{dede:global.cfg_keywords/}" />
-    <meta name="description" content="{dede:global.cfg_description/}" />
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <meta name="renderer" content="webkit">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
-    <link href="/skin/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="/skin/css/swiper-3.3.1.min.css" />
-    <link href="{dede:global.cfg_templets_skin/}/style/yrjf.css" rel="stylesheet"/>
-    <link href="{dede:global.cfg_templets_skin/}/style/app.css" rel="stylesheet"/>
-    <!--[if IE]>
-    <script src="/skin/css/respond.js"></script>
-    <script src="/skin/css/html5.js"></script>
-    <![endif]-->
-
-    <!-- baie.com.cn Baidu tongji analytics -->
-    <script>
-      var _hmt = _hmt || [];
-      (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?64523922e3a0bb8fdfc9c7e9d61c0feb";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-      })();
-    </script>
-    <script>
-      var _hmt = _hmt || [];
-      (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?c4c3efdacc727de600df4d221b325ab1";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-      })();
-    </script>
+    {dede:include filename="layout/head.htm"/}
     <style>
       .navbar {
             background-color: #333;
@@ -53,7 +17,7 @@
     </style>
 </head>
 <body>
-{dede:include filename="head.htm"/}
+{dede:include filename="components/header.htm"/}
 <section style="min-width: 1200px;margin-top: 120px;">
     <div class="product-nav">
         <ul class="clearfix">
@@ -85,15 +49,7 @@
         {/dede:pagelist}
     </ul>
 </section>
-{dede:include filename="foot.htm"/}
-<script src="/skin/css/jquery-1.10.1.min.js"></script>
-<!--<script src="/skin/css/jquery.easing.js"></script>-->
-<script src="/skin/css/bootstrap.min.js"></script>
-<script src="/skin/css/aos.js"></script>
-<script src="/skin/css/swiper-3.3.1.jquery.min.js"></script>
-<script src="{dede:global.cfg_templets_skin/}/js/jquery-ias.min.js"></script>
-<script src="{dede:global.cfg_templets_skin/}/js/yrjf.js" id="JS" page="home"></script>
-<script src="{dede:global.cfg_templets_skin/}/js/validation.js"></script>
-<script src="{dede:global.cfg_templets_skin/}/js/app.js"></script>
+{dede:include filename="components/footer.htm"/}
+{dede:include filename="layout/script.htm"/}
 </body>
 </html>

@@ -2,6 +2,7 @@
 a, img {
     border: 0;
 }
+
 .under-line {
     width: 80px;
     height: 4px;
@@ -12,9 +13,11 @@ a, img {
 .jumbotron {
     background-color: transparent;
 }
+
 .jumbotron h1 {
     font-size: 30px;
 }
+
 .jumbotron p {
     text-align: start;
     text-indent: 40px;
@@ -23,6 +26,7 @@ a, img {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 /*.jumbotron span { !*文本段落前空两格*!*/
 /*display: inline-block;*/
 /*width: 44px;*/
@@ -35,34 +39,52 @@ a, img {
     line-height: 34px;
     border-radius: 0;
 }
+
 /*common END*/
 /*banner START*/
 .banner {
     /*height: 800px;*/
 }
+
 /*banner END*/
 /*baie-body START*/
 
 .baie-box1 .jumbotron {
     padding-top: 60px;
-  margin: 0;
+    margin: 0;
     padding-bottom: 70px;
 }
+
 .baie-box1 p {
     height: 220px;
-    margin-top: 62px;
-    margin-bottom: 17px;
+    width: 1160px;
+    margin: 62px auto 0;
 }
+
 .baie-box2 .jumbotron {
     padding-top: 28px;
     margin-bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.baie-box2 p.text {
+    width: 1160px;
+    margin: 0 auto 38px;
+}
+
+.baie-box2 .pioneer_box {
+    min-width: 1090px;
+    text-align: center;
+}
+
 .baie-box3 .column {
     width: 480px;
     height: 300px;
     padding: 0;
-  margin: 10px 15px;
+    margin: 10px 15px;
 }
+
 .baie-box3 .thumbnail {
     position: relative;
     width: 480px;
@@ -74,6 +96,7 @@ a, img {
     z-index: 50;
     font-size: 14px;
 }
+
 .baie-box3 .thumbnail:hover {
     width: 510px;
     height: 310px;
@@ -83,21 +106,129 @@ a, img {
     box-shadow: 0 14px 27px 0 #CCC;
     font-size: 16px;
 }
+
+video {
+    width: 960px;
+}
+
 .baie-video {
-            position: relative;
-            width: 960px;
-            margin: 37px auto 0;
-        }
-        .baie-video>.video-btn {
-            position: absolute;
-            top: 220px;
-            left: 430px;
-            z-index: 2000;
-        }
-      .b-container {
-          padding-right: 15px;
-          padding-left: 15px;
-          margin-right: auto;
-          margin-left: auto;
-      }
+    position: relative;
+    width: 960px;
+    margin: 37px auto 0;
+}
+
+.baie-video > .video-btn {
+    position: absolute;
+    top: 220px;
+    left: 430px;
+    z-index: 2000;
+}
+
+.b-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 /*baie-body END*/
+@media (max-width: 750px) {
+    .jumbotron h1 {
+        font-size: .4rem;
+    }
+
+    .jumbotron p {
+        text-align: start;
+        text-indent: .56rem;
+        font-size: .28rem;
+        line-height: .56rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .jumbotron .btn-more {
+        color: #EA5503;
+        padding: 0;
+        width: 1.12rem;
+        height: .4rem;
+        font-size: .28rem;
+        line-height: .4rem;
+        border-radius: 0;
+    }
+
+    .baie-box1 p {
+        height: 2.28rem;
+        width: 6.68rem;
+        margin: .52rem auto .16rem;
+    }
+
+    .baie-box2 p.text {
+        width: auto;
+    }
+
+    .baie-box2 .pioneer_box {
+        min-width: auto;
+    }
+
+    .baie-video {
+        width: auto;
+        margin: .56rem auto 0;
+    }
+
+    video {
+        width: 6.7rem;
+    }
+
+    .baie-video > .video-btn {
+        width: 1.2rem;
+        left: 3.16rem;
+        top: 1.28rem;
+    }
+
+    .baie-box1 .jumbotron {
+        padding-top: .78rem;
+        padding-bottom: .84rem;
+    }
+
+    .baie-box2 .jumbotron {
+        padding-top: .6rem;
+        background-size: 100% 2.74rem;
+    }
+
+    .baie-box3 .caption p {
+        width: 15em;
+        font-size: 1em;
+        color: #333;
+        line-height: 1.6em;
+        text-indent: 0;
+    }
+
+    .baie-box3 .column {
+        width: 6.7rem;
+        height: 4.12rem;
+        padding: 0;
+        margin: .2rem auto;
+    }
+
+    .baie-box3 .thumbnail {
+        position: relative;
+        border-radius: 0;
+        margin: 0;
+        width: 6.7rem;
+        height: 4.12rem;
+        top: 0;
+        left: 0;
+        z-index: 50;
+        font-size: .2rem;
+    }
+
+    .baie-box3 .thumbnail:hover {
+        width: 6.7rem;
+        height: 4.12rem;
+        top: 0;
+        left: 0;
+        z-index: 50;
+        font-size: .2rem;
+        box-shadow: 0 0 #CCC;
+    }
+}

@@ -1,98 +1,107 @@
+/*百e创业*/
 .dotted {
     width: 810px;
     height: 180px;
     position: absolute;
     z-index: 20;
 }
+
 .dottedR {
     left: 186px;
     top: 94px;
 }
+
 .dottedL {
     left: 36px;
     top: -5px;
     height: 140px;
     width: 870px;
 }
+
 .pioneer-box3-swiper {
-            width: 1200px;
-            height: 700px;
-            margin-top: -430px;
-            background: #FFF;
-            box-shadow: 0 15px 40px 0 #BDBDBD;
-            border-radius: 10px;
-        }
+    width: 1200px;
+    height: 700px;
+    margin-top: -430px;
+    background: #FFF;
+    box-shadow: 0 15px 40px 0 #BDBDBD;
+    border-radius: 10px;
+}
 
-        .pioneer-box3-swiper .swiper-slide {
-            padding: 0 100px;
-        }
+.pioneer-box3-swiper .swiper-slide {
+    padding: 0 100px;
+}
 
-        .pioneer-box3-swiper .photo {
-            max-width: 500px;
-    		max-height: 600px;
-    		margin: 50px 60px 0 0;
-        }
+.pioneer-box3-swiper .photo {
+    max-width: 500px;
+    max-height: 600px;
+    margin: 50px 60px 0 0;
+}
 
-        .pioneer-box3-swiper .detail {
-            width: 411px;
-            margin-top: 126px;
-        }
+.pioneer-box3-swiper .detail {
+    width: 411px;
+    margin-top: 126px;
+}
 
-        .pioneer-box3-swiper h1 {
-            font-size: 40px;
-            margin-top: 141px;
-            height: 90px;
-        }
+.pioneer-box3-swiper h1 {
+    font-size: 40px;
+    margin-top: 141px;
+    height: 90px;
+}
 
-        .pioneer-box3-swiper h4 {
-            margin: 15px 0 27px 0;
-            color: #BDBDBD;
-        }
-        .pioneer-box3-swiper .resume {
-            font-size: 24px;
-            color: #666;
-        }
+.pioneer-box3-swiper h4 {
+    margin: 15px 0 27px 0;
+    color: #BDBDBD;
+}
 
-        .pioneer-box3-swiper-avatar {
-            width: 430px;
-            position: relative;
-            top: -514px;
-            left: 270px;
-        }
-        .pioneer-box3-swiper-avatar .swiper-slide {
-            width: 70px;
-            height: 70px;
-            z-index: 200;
-            border-radius: 35px;
-        }
-        .pioneer-box3-swiper-avatar .active-avatar {
-            background: #EA5503;
-            opacity: 0.3;
-        }
-      
-      .pioneer-box1 .detail {
-            position: relative;
-            z-index:200;
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
-        }
-      .pioneer-box1 .detail>img {
-            height: 100%
-        }
-        .pioneer-box1 .btn-box>div {
-            position: relative;
-            z-index: 200;
-        }
+.pioneer-box3-swiper .resume {
+    font-size: 24px;
+    color: #666;
+}
+
+.pioneer-box3-swiper-avatar {
+    width: 430px;
+    position: relative;
+    top: -514px;
+    left: 270px;
+}
+
+.pioneer-box3-swiper-avatar .swiper-slide {
+    width: 70px;
+    height: 70px;
+    z-index: 200;
+    border-radius: 35px;
+}
+
+.pioneer-box3-swiper-avatar .active-avatar {
+    background: #EA5503;
+    opacity: 0.3;
+}
+
+.pioneer-box1 .detail {
+    position: relative;
+    z-index: 200;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.pioneer-box1 .detail > img {
+    height: 100%
+}
+
+.pioneer-box1 .btn-box > div {
+    position: relative;
+    z-index: 200;
+}

@@ -1,0 +1,23 @@
+<!--宣传-详情页-->
+<div class="promotion">
+    <div class="swiper-container gallery-top">
+        <div class="swiper-wrapper">
+            {dede:arclist typeid='40' channelid='1' addfields='promotion_url'}
+            <div class="swiper-slide">
+                <a href="[field:promotion_url/]" target="_blank">
+                    <img src="[field:litpic/]" alt="[field:title/]" width="260" height="260">
+                </a>
+            </div>
+            {/dede:arclist}
+        </div>
+    </div>
+    <div class="swiper-container gallery-thumbs">
+        <div class="swiper-wrapper">
+            {dede:arclist typeid='40'}
+            <div class="swiper-slide">
+                <img src="[field:litpic/]" alt="[field:title/]" width="50" height="50">
+            </div>
+            {/dede:arclist}
+        </div>
+    </div>
+</div>

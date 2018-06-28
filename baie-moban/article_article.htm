@@ -19,20 +19,16 @@
     <div class="content1440" style="width: 100%;">
         <div class="titlePage"><span class="cn">{dede:field.typename/}</span> <span class="en">POLICY & LAW</span></div>
         <section class="model_news_detail">
-            <div class="back">{dede:type}<a href="[field:typelink/]" class="animate">返回列表</a>{/dede:type}</div>
-          	<div style="text-align: center;"><img src="{dede:field.litpic/}" alt="产品图片" style="max-width: 400px;max-height: 600px;"></div>
+            <div class="back">
+                {dede:type}<a href="[field:typelink/]" class="animate">返回列表</a>{/dede:type}
+            </div>
+          	<div style="text-align: center;">
+                <img src="{dede:field.litpic/}" alt="产品图片" style="max-width: 400px;max-height: 600px;">
+            </div>
             <div class="title">{dede:field.title/}</div>
-            <div class="summary">发布时间：{dede:field.pubdate function="MyDate('Y-m-d
-                H:i',@me)"/}    信息来源：{dede:field.source/}    浏览次数：<span><script
-                        src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}"
-                        type='text/javascript' language="javascript"></script></span></div>
-            <div class="detailContent"> {dede:field.body/}
-            </div>
-            <div class="newShare">
-                <div class="bdsharebuttonbox" style="float: right"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
-                <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-                <strong style="line-height: 28px">分享到：</strong>
-            </div>
+            <div class="summary">发布时间：{dede:field.pubdate function="MyDate('Y-m-dH:i',@me)"/}    信息来源：{dede:field.source/}    浏览次数：<span><script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}" type='text/javascript' language="javascript"></script></span></div>
+            <div class="detailContent">{dede:field.body/}</div>
+            {dede:include filename="components/share.htm"/}
             <div class="detailPage">
                 <div>{dede:prenext get='pre'/}</div>
                 <div>{dede:prenext get='next'/}</div>
