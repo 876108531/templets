@@ -27,10 +27,6 @@ a, img {
     text-overflow: ellipsis;
 }
 
-/*.jumbotron span { !*文本段落前空两格*!*/
-/*display: inline-block;*/
-/*width: 44px;*/
-/*}*/
 .jumbotron .btn-more {
     background-color: transparent;
     width: 160px;
@@ -40,15 +36,12 @@ a, img {
     border-radius: 0;
 }
 
-/*common END*/
-/*banner START*/
-.banner {
-    /*height: 800px;*/
+#index-btn-more2 {
+    display: none;
 }
+/*common END*/
 
-/*banner END*/
 /*baie-body START*/
-
 .baie-box1 .jumbotron {
     padding-top: 60px;
     margin: 0;
@@ -76,6 +69,10 @@ a, img {
 .baie-box2 .pioneer_box {
     min-width: 1090px;
     text-align: center;
+}
+
+.baie-box2 .under-line {
+    display: none;
 }
 
 .baie-box3 .column {
@@ -130,20 +127,17 @@ video {
     margin-right: auto;
     margin-left: auto;
 }
-
 /*baie-body END*/
+
 @media (max-width: 750px) {
     .jumbotron h1 {
         font-size: .4rem;
     }
 
     .jumbotron p {
-        text-align: start;
         text-indent: .56rem;
         font-size: .28rem;
         line-height: .56rem;
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
 
     .jumbotron .btn-more {
@@ -153,30 +147,24 @@ video {
         height: .4rem;
         font-size: .28rem;
         line-height: .4rem;
-        border-radius: 0;
     }
 
-    .baie-box1 p {
-        height: 2.28rem;
-        width: 6.68rem;
-        margin: .52rem auto .16rem;
+    #index-btn-more1 {
+        display: none;
     }
 
-    .baie-box2 p.text {
-        width: auto;
+    #index-btn-more2 {
+        display: block;
+        margin-top: .12rem;
     }
 
-    .baie-box2 .pioneer_box {
-        min-width: auto;
+    video {
+        width: 6.7rem;
     }
 
     .baie-video {
         width: auto;
         margin: .56rem auto 0;
-    }
-
-    video {
-        width: 6.7rem;
     }
 
     .baie-video > .video-btn {
@@ -190,45 +178,135 @@ video {
         padding-bottom: .84rem;
     }
 
+    .baie-box1 p {
+        height: 2.28rem;
+        width: 6.68rem;
+        margin: .52rem auto .16rem;
+    }
+
+    .baie-box2 p.text {
+        width: auto;
+        display: none;
+    }
+
+    .baie-box2 .pioneer_box {
+        min-width: 0;
+    }
+
+    .baie-box2 .list-box {
+        width: 6.7rem;
+        margin: 0 auto .42rem;
+        border-radius: .16rem;
+    }
+
+    .baie-box2 .list-box .box-bgImg {
+        background-size: 2.04rem 2.35rem;
+        background-position: .38rem .55rem;
+        height: 3.32rem;
+        border-radius: .16rem;
+        box-shadow:0 .06rem .12rem 0 rgba(189,189,189,0.5);
+    }
+
+    .baie-box2 .list-box .list-box-text {
+        background: transparent;
+        position: relative;
+        height: auto;
+        width: 3.51rem;
+        top: 0;
+        left: 2.79rem;
+        border-radius: 0;
+        padding: .55rem 0 0;
+    }
+
+    .baie-box2 .list-box h1 {
+        font-size: .35rem;
+        line-height: .48rem;
+        color: #333;
+    }
+
+    .baie-box2 .list-box p.line-clamp-2 {
+        font-size: .25rem;
+        color: #333;
+        line-height: .43rem;
+        margin-top: .18rem;
+        -webkit-line-clamp: 3;
+    }
+
+    .baie-box2 .under-line {
+        display: block;
+        width: .64rem;
+        height: .04rem;
+        margin: .2rem auto .74rem;
+    }
+
     .baie-box2 .jumbotron {
         padding-top: .6rem;
         background-size: 100% 2.74rem;
     }
 
-    .baie-box3 .caption p {
-        width: 15em;
-        font-size: 1em;
-        color: #333;
-        line-height: 1.6em;
-        text-indent: 0;
+    .baie-box3 {
+        margin-top: .78rem;
+    }
+
+    .baie-box3 .row {
+        width: 6.7rem;
+        margin: .72rem auto 1.02rem;
     }
 
     .baie-box3 .column {
         width: 6.7rem;
         height: 4.12rem;
-        padding: 0;
         margin: .2rem auto;
     }
 
     .baie-box3 .thumbnail {
-        position: relative;
-        border-radius: 0;
-        margin: 0;
         width: 6.7rem;
         height: 4.12rem;
-        top: 0;
-        left: 0;
-        z-index: 50;
         font-size: .2rem;
+        border-radius: .16rem;
     }
 
     .baie-box3 .thumbnail:hover {
         width: 6.7rem;
         height: 4.12rem;
-        top: 0;
-        left: 0;
-        z-index: 50;
         font-size: .2rem;
         box-shadow: 0 0 #CCC;
+        left: 0;
+        top: 0;
+    }
+
+    .baie-box3 .btn {
+        margin: 3.04rem 0 0 .74rem;
+        font-size: 1.2em;
+        border: 0;
+    }
+
+    .baie-box3 .caption {
+        width: 3.96rem;
+        background: rgba(255, 255, 255, 0.7);
+        padding: .54rem 0 0 .56rem;
+    }
+
+    .baie-box3 .caption h1 {
+        height: 1.08rem;
+        font-size: .4rem;
+        letter-spacing: .07rem;
+    }
+
+    .baie-box3 .caption h3 {
+        font-size: .26rem;
+        line-height: .36rem;
+    }
+
+    .baie-box3 .caption p {
+        width: 2.96rem;
+        font-size: .2rem;
+        line-height: .3rem;
+        -webkit-line-clamp: 3;
+    }
+
+    .b-container {
+        padding-right: 0;
+        padding-left: 0;
     }
 }

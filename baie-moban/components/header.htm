@@ -1,6 +1,6 @@
 <!--顶部导航-->
 <nav class="navbar navbar-fixed-top" style="z-index: 3000">
-    <div class="clearfix" style="max-width: 1200px;height: 44px;margin: auto">
+    <div class="clearfix">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#baie-navbar" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="{dede:global.cfg_templets_skin/}/icon/logo-baieBrand.png" alt="百e国际品牌图" style="height: 30px"/></a>
+            <a class="navbar-brand" href="#"><img src="{dede:global.cfg_templets_skin/}/icon/logo-baieBrand.png" alt="百e国际品牌图"/></a>
         </div>
         <div class="collapse navbar-collapse" id="baie-navbar">
             <ul class="nav navbar-nav">
@@ -27,7 +27,7 @@
                     <a href='#' class="dropdown-toggle baieNav-news" data-toggle="dropdown">[field:typename/]<strong class="caret"></strong></a>
                     <div class="under_line"></div>
                     {/dede:type}
-                    <ul class="dropdown-menu" style="min-width: 140px;width: 140px;padding: 20px 0 20px;margin-left: -9%;">
+                    <ul class="dropdown-menu">
                         {dede:channelartlist typeid='top'  typeid='3,15'}
                         <li><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></li>
                         {/dede:channelartlist}
@@ -62,7 +62,7 @@
                     <a href='[field:typelink /]' class="dropdown-toggle" data-toggle="dropdown">[field:typename/]<strong class="caret"></strong></a>
                     <div class="under_line"></div>
                     {/dede:type}
-                    <ul class="dropdown-menu" style="min-width: 140px;width: 140px;padding: 20px 0 20px;margin-left: -33%;">
+                    <ul class="dropdown-menu login">
                         {dede:type typeid='26'}
                         <li><a href="[field:typelink /]" target="_blank">[field:typename/]</a></li>
                         {/dede:type}
