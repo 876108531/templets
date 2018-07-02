@@ -18,6 +18,10 @@
     width: 870px;
 }
 
+.pioneer-box2 .pioneer_box {
+    display: none;
+}
+
 .pioneer-box3-swiper {
     width: 1200px;
     height: 700px;
@@ -104,4 +108,105 @@
 .pioneer-box1 .btn-box > div {
     position: relative;
     z-index: 200;
+}
+
+@media (max-width: 750px) {
+    .pioneer-box1 {
+        margin-top: 1.44rem;
+        min-width: 0;
+        padding-bottom: 1.06rem;
+    }
+
+    .pioneer-box1 > h1 {
+        padding: 0 .59rem;
+    }
+
+    .pioneer-box1 p {
+        width: 6.52rem;
+        height: auto;
+        color: #666;
+        font-size: .28rem;
+        line-height: .52rem;
+        margin: .43rem auto .74rem;
+        text-align: start;
+    }
+
+    .pioneer-box1 .detail > img {
+        width: 100%;
+    }
+
+    .pioneer-box1 .btn-box {
+        width: 100%;
+    }
+
+    .pioneer-box1 .btn-box:first-child {
+        padding-bottom: .2rem;
+    }
+
+    .pioneer-box1 .btn-box:last-child {
+        padding-top: .4rem;
+    }
+
+    .pioneer-box1 .btn-box > div > div {
+        width: 1.42rem;
+        height: 1.42rem;
+        text-align: center;
+    }
+
+    .pioneer-box1 .btn-box h2 {
+        font-size: .28rem;
+        margin-top: .2rem;
+        margin-bottom: 0;
+    }
+
+    .pioneer-box1 .btn-box .b-btn {
+        width: 1.32rem;
+    }
+
+    .pioneer-box1 .btn-box > div:nth-child(2) {
+        margin: 0 .85rem;
+    }
+
+    .dottedL {
+        left: .8rem;
+        top: -.18rem;
+    }
+
+    .dottedR {
+        left: 1.5rem;
+        top: .7rem;
+    }
+
+    .dotted {
+        width: 5.48rem;
+        height: 1.28rem;
+    }
+
+    .pioneer-box2 .pioneer_box {
+        display: block;
+    }
+
+    .pioneer-box2 .under_line {
+        width: .64rem;
+        margin-bottom: .82rem;
+    }
+
+    .pioneer-box2 {
+        height: 100%;
+        background-size: 100% 4.34rem;
+        background-repeat: no-repeat;
+    }
+
+    .pioneer-box2 > h1 {
+        margin: 0;
+        padding: .66rem 0 .2rem;
+    }
+
+    .pioneer-box3-swiper {
+        display: none;
+    }
+
+    .pioneer-box3-swiper-avatar {
+        display: none;
+    }
 }

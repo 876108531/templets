@@ -20,21 +20,13 @@
         .navbar {
             background-color: #333;
         }
-        #baie-navbar .baieNav-pioneer {
-            font-size: 16px;
-            padding-bottom: 8px;
-        }
-
-        #baie-navbar .baieNav-pioneer + .under_line {
-            display: block;
-        }
     </style>
 </head>
 <body>
 {dede:include filename="components/header.htm"/}
-<div class="pioneer-box1 top-nav" style="margin-top: 130px">
-    <h1 class="text-center"><img
-            src="{dede:global.cfg_templets_skin/}/icon/Title-baiePioneer1.png" alt="标题"></h1>
+<div class="pioneer-box1 top-nav">
+    <h1 class="text-center"><img class="media-width100"
+                                 src="{dede:global.cfg_templets_skin/}/icon/Title-baiePioneer1.png" alt="标题"></h1>
     <p class="text-center">六大支持系统使创业者从产品知识到物流配送，从业务推广到团队 管理，从个人培训到客户挖掘都得到全方位支持。</p>
     <div>
         <div class="btn-box clearfix">
@@ -95,9 +87,21 @@
         </div>
     </div>
 </div>
-<div class="pioneer-box2" style="background-image: url('/uploads/baie/pioneer_back_pioneer.png')">
-    <h1 class="font-white text-center">创业案例</h1>
+<div class="pioneer-box2 baie-box2 text-center" style="background-image: url('/uploads/baie/pioneer_back_pioneer.png')">
+    <h1 class="font-white">创业案例</h1>
     <div class="under_line b-color-white"></div>
+    <div class="pioneer_box">
+        {dede:arclist typeid = '39' limit = '0, 3' channelid='1' addfields='pioneer_body' titlelen="100"}
+        <a href="[field:arcurl/]" class="list-box">
+            <div class="box-bgImg" style="background-image: url([field:litpic/])">
+                <div class="list-box-text">
+                    <h1  class="line-clamp-1">[field:title/]</h1>
+                    <p class="line-clamp-2">[field:description/]</p>
+                </div>
+            </div>
+        </a>
+        {/dede:arclist}
+    </div>
 </div>
 <div class="swiper-container pioneer-box3-swiper">
     <div class="swiper-wrapper">
@@ -127,20 +131,21 @@
 </div>
 
 <div class="listbox pioneer-box4 clearfix">
-    <h1 class="text-center"><img src="{dede:global.cfg_templets_skin/}/icon/Title-baiePioneer2.png" alt="标题"></h1>
+    <h1 class="text-center"><img class="media-width100" src="{dede:global.cfg_templets_skin/}/icon/Title-baiePioneer2.png" alt="标题"></h1>
     <ul>
         {dede:list pagesize='4' titlelen="100"}
         <li class="item">
             <a href="[field:arcurl/]">
                 <div class="article-box clearfix">
                     <div class="pull-left left-line"></div>
-                    <div class="pull-left left">
+                    <div class="pull-left left big-time">
                         <h1>[field:pubdate function='strftime("%Y",@me)'/]</h1>
                         <div class="under_line"></div>
                         <h3>[field:pubdate function='strftime("%m",@me)'/]-[field:pubdate function='strftime("%d",@me)'/]</h3>
                     </div>
                     <div class="pull-left right">
                         <h1>[field:title/]</h1>
+                        <span class="small-time">[field:pubdate function='strftime("%Y",@me)'/]/[field:pubdate function='strftime("%m",@me)'/]/[field:pubdate function='strftime("%d",@me)'/]</span>
                         <p>[field:description/]</p>
                     </div>
                 </div>
@@ -181,6 +186,9 @@
       }
     });
   });
+</script>
+<script>
+    $(".baieNav-pioneer").parent().addClass("baieNav-active")
 </script>
 </body>
 </html>

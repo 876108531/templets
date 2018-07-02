@@ -193,45 +193,6 @@ video {
         min-width: 0;
     }
 
-    .baie-box2 .list-box {
-        width: 6.7rem;
-        margin: 0 auto .42rem;
-        border-radius: .16rem;
-    }
-
-    .baie-box2 .list-box .box-bgImg {
-        background-size: 2.04rem 2.35rem;
-        background-position: .38rem .55rem;
-        height: 3.32rem;
-        border-radius: .16rem;
-        box-shadow:0 .06rem .12rem 0 rgba(189,189,189,0.5);
-    }
-
-    .baie-box2 .list-box .list-box-text {
-        background: transparent;
-        position: relative;
-        height: auto;
-        width: 3.51rem;
-        top: 0;
-        left: 2.79rem;
-        border-radius: 0;
-        padding: .55rem 0 0;
-    }
-
-    .baie-box2 .list-box h1 {
-        font-size: .35rem;
-        line-height: .48rem;
-        color: #333;
-    }
-
-    .baie-box2 .list-box p.line-clamp-2 {
-        font-size: .25rem;
-        color: #333;
-        line-height: .43rem;
-        margin-top: .18rem;
-        -webkit-line-clamp: 3;
-    }
-
     .baie-box2 .under-line {
         display: block;
         width: .64rem;
@@ -245,7 +206,7 @@ video {
     }
 
     .baie-box3 {
-        margin-top: .78rem;
+        margin-top: 1.76rem;
     }
 
     .baie-box3 .row {
@@ -277,6 +238,7 @@ video {
 
     .baie-box3 .btn {
         margin: 3.04rem 0 0 .74rem;
+        padding: .06rem .24rem;
         font-size: 1.2em;
         border: 0;
     }

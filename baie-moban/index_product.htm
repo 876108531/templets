@@ -4,21 +4,14 @@
 <head>
     {dede:include filename="layout/head.htm"/}
     <style>
-      .navbar {
+        .navbar {
             background-color: #333;
-        }
-        #baie-navbar .baieNav-product {
-            font-size: 16px;
-            padding-bottom: 8px;
-        }
-        #baie-navbar .baieNav-product+.under_line {
-            display: block;
         }
     </style>
 </head>
 <body>
 {dede:include filename="components/header.htm"/}
-<section style="min-width: 1200px;margin-top: 120px;">
+<section id="product-box">
     <div class="product-nav">
         <ul class="clearfix">
             {dede:type typeid='30'}
@@ -31,14 +24,14 @@
     </div>
     <div class="product-list listbox">
         <ul>
-            {dede:list pagesize='4'  channelid='1' addfields='pioneer_body'}
+            {dede:list pagesize='4' channelid='1' addfields='pioneer_body'}
             <li class="clearfix item">
+                <img id="product-img" src="[field:litpic/]" alt="产品图片">
                 <div>
                     <img src="[field:avatar/]" alt="品牌图片">
                     <a href="[field:arcurl/]"><h1>[field:title/]</h1></a>
                     <p>[field:description/]</p>
                 </div>
-                <img src="[field:litpic/]" alt="产品图片">
             </li>
             {/dede:list}
         </ul>
@@ -51,5 +44,8 @@
 </section>
 {dede:include filename="components/footer.htm"/}
 {dede:include filename="layout/script.htm"/}
+<script>
+    $(".baieNav-product").parent().addClass("baieNav-active")
+</script>
 </body>
 </html>

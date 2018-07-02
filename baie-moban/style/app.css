@@ -24,7 +24,8 @@ a {
 }
 
 .top-nav {
-    margin-top: 51px;
+    margin-top: 130px;
+    min-width: 1200px
 }
 
 .banner {
@@ -111,7 +112,7 @@ a {
     font-size: 16px;
 }
 
-#baie-navbar .baieNav-active+.under_line {
+#baie-navbar .baieNav-active .under_line {
     display: block;
 }
 
@@ -375,6 +376,22 @@ footer .pull-left:nth-child(2) {
 footer .pull-left:last-child {
     width: 300px;
 }
+
+.footer-collapse {
+    display: none;
+}
+
+#footer-box1 ul:last-child {
+    margin-bottom: 0;
+}
+
+#footer-box2 {
+    margin-right: 263px;
+}
+
+.footer-under-line {
+    display: none;
+}
 /*footer END*/
 
 /*index START*/
@@ -621,7 +638,6 @@ footer .pull-left:last-child {
 
 .pioneer-box2 {
     height: 700px;
-    background-color: #eee;
 }
 
 .pioneer-box2 > h1 {
@@ -687,6 +703,10 @@ footer .pull-left:last-child {
     white-space: nowrap;
 }
 
+.pioneer-box4 .article-box .right > h1 + span {
+    display: none;
+}
+
 .pioneer-box4 .article-box p {
     width: 836px;
     height: 80px;
@@ -725,6 +745,11 @@ footer .pull-left:last-child {
 /*article END*/
 
 /*product START*/
+#product-box {
+    min-width: 1200px;
+    margin-top: 120px;
+}
+
 .product-nav {
     margin-top: 130px;
 }
@@ -744,7 +769,7 @@ footer .pull-left:last-child {
     width: 130px;
     height: 48px;
     line-height: 36px;
-
+    border: 1px solid #999;
     border-radius: 0;
 }
 

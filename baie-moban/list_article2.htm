@@ -13,7 +13,7 @@
 {dede:include filename="components/header.htm"/}
 <section class="list-article top-nav">
     <div class="listbox pioneer-box4 clearfix">
-        <h1 class="text-center"><img src="{dede:global.cfg_templets_skin/}/icon/{dede:field runphp='yes' name = 'typeid'}
+        <h1 class="text-center"><img class="media-width100" src="{dede:global.cfg_templets_skin/}/icon/{dede:field runphp='yes' name = 'typeid'}
         switch(@me){
         case '3':
         @me='Title-baieNews.png';
@@ -33,13 +33,14 @@
                 <a href="[field:arcurl/]">
                     <div class="article-box clearfix">
                         <div class="pull-left left-line"></div>
-                        <div class="pull-left left">
+                        <div class="pull-left left big-time">
                             <h1>[field:pubdate function='strftime("%Y",@me)'/]</h1>
                             <div class="under_line"></div>
                             <h3>[field:pubdate function='strftime("%m",@me)'/]-[field:pubdate function='strftime("%d",@me)'/]</h3>
                         </div>
                         <div class="pull-left right">
                             <h1>[field:title/]</h1>
+                            <span class="small-time">[field:pubdate function='strftime("%Y",@me)'/]/[field:pubdate function='strftime("%m",@me)'/]/[field:pubdate function='strftime("%d",@me)'/]</span>
                             <p>[field:description/]</p>
                         </div>
                     </div>
@@ -56,5 +57,8 @@
 </section>
 {dede:include filename="components/footer.htm"/}
 {dede:include filename="layout/script.htm"/}
+<script>
+    $(".baieNav-news").parent().addClass("baieNav-active")
+</script>
 </body>
 </html>

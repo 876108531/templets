@@ -50,10 +50,12 @@ $(document).ready(function () {
             detailEle.removeClass("hidden");
             $(this).attr("src", btn_orange_src);
         }
-        if (detailEle.hasClass("hidden")) {
-            $(".btn-box:first-child").css("padding-bottom", "50px");
-        } else {
-            $(".btn-box:first-child").css("padding-bottom", "33px");
+        if (window.screen.width > 750) {
+            if (detailEle.hasClass("hidden")) {
+                $(".btn-box:first-child").css("padding-bottom", "50px");
+            } else {
+                $(".btn-box:first-child").css("padding-bottom", "33px");
+            }
         }
         last_img = ele;
         last_btn = $(this);
@@ -144,4 +146,11 @@ $(document).ready(function () {
             break;
     }
     $("#baie-navbar " + activeEle).addClass("baie-nav-active")
+    /*
+    * 底部收缩
+    * */
+    var footer_btn = $(".footer-collapse")
+    footer_btn.click(function () {
+        $(this).next().hasClass("open") ? $(this).next().removeClass("open") : $(this).next().addClass("open")
+    })
 });
