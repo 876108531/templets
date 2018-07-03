@@ -130,7 +130,7 @@
         background-position: .38rem .55rem;
         height: 3.32rem;
         border-radius: .16rem;
-        box-shadow:0 .06rem .12rem 0 rgba(189,189,189,0.5);
+        box-shadow: 0 .06rem .12rem 0 rgba(189, 189, 189, 0.5);
     }
 
     .baie-box2 .list-box .list-box-text {
@@ -191,17 +191,17 @@
     }
 
     footer .foot {
-        width: 4.06rem;
+        width: 100%;
+        height: auto;
         margin: .6rem auto 0;
-        padding-top: 0;
+        padding: 0 .4rem .68rem;
         border-top: 0 solid #666;
+        font-size: .13rem;
+        text-align: center;
     }
 
-    .foot {
-        height: auto;
-        font-size: .13rem;
-        padding: 0 0 .68rem;
-        text-align: center;
+    .foot .foot-box:first-child {
+        margin-bottom: 6px;
     }
 
     #submit {
@@ -251,8 +251,9 @@
     }
 
     .collapse-btn:before {
-        content:"+";
+        content: "+";
     }
+
     /* footer END */
     /* pioneer-box4 列表 START */
     .pioneer-box4 {
@@ -371,5 +372,113 @@
         font-size: .4rem;
         line-height: .6rem;
     }
+
     /* 产品 END */
+    /* 文章详情 START*/
+    .article_box {
+        width: auto;
+        margin-top: 1.2rem;
+        padding: 0;
+        background-color: #F4F4F4;
+    }
+
+    .article_box .pull-left {
+        width: 100%;
+    }
+
+    .model_news_detail {
+        width: auto;
+        min-width: 0;
+        margin-bottom: .2rem;
+        padding: 0 .48rem .2rem;
+        background-color: #fff;
+    }
+
+    .breadcrumb {
+        padding: 0 .48rem;
+        margin-bottom: 0;
+    }
+
+    .baie-breadcrumb > li {
+        max-width: 2rem;
+    }
+
+    .model_news_detail .title {
+        line-height: .72rem;
+        font-size: .5rem;
+        padding: .24rem 0;
+    }
+
+    .model_news_detail .summary {
+        text-align: center;
+        line-height: .34rem;
+        font-size: .24rem;
+        padding-bottom: 10px;
+        border-bottom-width: 0;
+    }
+
+    .model_news_detail .newShare {
+        height: 25px;
+        margin: 15px 0;
+    }
+
+    .article_box aside {
+        margin-top: 0;
+        margin-left: 0;
+        padding: .4rem .4rem .5rem;
+        line-height: .5rem;
+        background-color: #fff;
+    }
+
+    .promotion {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        padding: 0 0 .5rem;
+        background-color: #fff;
+        text-align: center;
+    }
+
+    .article_box aside .list-unstyled {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .article_box aside .list-unstyled > li {
+        padding-bottom: 15px;
+    }
+
+    .article_box aside h4 {
+        margin-bottom: 20px;
+    }
+
+    .hot-under-line {
+        display: none;
+    }
+
+    .model_news_detail .detailPage div {
+        border-bottom-width: 0;
+    }
+
+    .model_news_detail .detailPage div a {
+        color: #579BD6;
+        text-decoration: underline;
+    }
+    /* 文章详情 END*/
+    /* 产品详情 START*/
+    .product-img-box img {
+        width: 100%;
+    }
+    .in-banner {
+        margin-top: 44px;
+    }
+    .school-body .content1440 {
+        padding: 30px 0 0;
+    }
+
+    .school-body .titlePage {
+        margin-bottom: 0;
+    }
+    
+    /* 产品详情 END*/
 }

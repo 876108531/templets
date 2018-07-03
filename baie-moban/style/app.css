@@ -746,6 +746,19 @@ footer .pull-left:last-child {
 .model_news_detail {
     width: 800px;
 }
+
+.hot-under-line {
+    width: 260px;
+    height: 3px;
+    background-color: #EAEAEA;
+    margin: 45px 0 59px;
+}
+
+
+.product-img-box img {
+    max-width: 400px;
+    max-height: 600px;
+}
 /*article END*/
 
 /*product START*/

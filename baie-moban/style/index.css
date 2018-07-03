@@ -201,12 +201,14 @@ video {
     }
 
     .baie-box2 .jumbotron {
+        height: auto;
         padding-top: .6rem;
+        padding-bottom: 0;
         background-size: 100% 2.74rem;
     }
 
     .baie-box3 {
-        margin-top: 1.76rem;
+        margin-top: .78rem;
     }
 
     .baie-box3 .row {

@@ -22,8 +22,8 @@
             <div class="back">
                 {dede:type}<a href="[field:typelink/]" class="animate">返回列表</a>{/dede:type}
             </div>
-          	<div style="text-align: center;">
-                <img src="{dede:field.litpic/}" alt="产品图片" style="max-width: 400px;max-height: 600px;">
+          	<div class="product-img-box" style="text-align: center;">
+                <img src="{dede:field.litpic/}" alt="产品图片">
             </div>
             <div class="title">{dede:field.title/}</div>
             <div class="summary">发布时间：{dede:field.pubdate function="MyDate('Y-m-dH:i',@me)"/}    信息来源：{dede:field.source/}    浏览次数：<span><script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}" type='text/javascript' language="javascript"></script></span></div>
