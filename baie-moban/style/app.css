@@ -742,6 +742,10 @@ footer .pull-left:last-child {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
+.model_news_detail {
+    width: 800px;
+}
 /*article END*/
 
 /*product START*/

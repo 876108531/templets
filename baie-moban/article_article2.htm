@@ -25,7 +25,7 @@
                 </ol>
             </div>
             <!--文章详情-通用-->
-            <section class="model_news_detail" style="width: 800px">
+            <section class="model_news_detail">
                 <div class="title">{dede:field.title/}</div>
                 <div class="summary">{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}    来源：{dede:field.source/}    浏览：<span><script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}" type='text/javascript' language="javascript"></script></span></div>
                 <div class="detailContent">{dede:field.body/}</div>
