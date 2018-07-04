@@ -1,0 +1,220 @@
+/* 走进百e */
+.container, .container-fluid {
+    min-width: 1200px;
+}
+
+.baie_honor {
+    margin: 81px 0 0 0;
+    padding: 0;
+    width: 1160px;
+    height: 310px;
+    overflow: hidden;
+}
+
+.walk-swiper-container {
+    height: 300px;
+    position: relative;
+}
+
+.walk-swiper-container .swiper-slide {
+    width: 500px;
+    height: 220px;
+    font-size: 18px;
+    background: #fff;
+    border: 1px #EAEAEA solid;
+}
+
+.walk-swiper-container .swiper-slide img {
+    vertical-align: top;
+    display: inline-block;
+    margin: 60px 30px 0;
+    width: 150px;
+    height: 100px;
+}
+
+.walk-swiper-container .swiper-slide .right {
+    display: inline-block;
+    width: 240px;
+    margin-top: 33px;
+}
+
+.walk-swiper-container .swiper-slide p {
+    color: #666666;
+    line-height: 36px;
+    margin-top: 12px;
+}
+
+.walk-swiper-container .walk-swiper-scrollbar {
+    height: 5px;
+    width: 100%;
+}
+
+.swiper-button-prev {
+    top: 110px;
+}
+
+.swiper-button-next {
+    top: 110px;
+}
+
+.walk-swiper-container .swiper-scrollbar-drag {
+    height: 10px;
+    background: linear-gradient(135deg, #FF9343, #EA5503);
+    border-radius: 0;
+}
+
+.walk-swiper-container .swiper-scrollbar-drag:hover {
+    cursor: pointer;
+}
+
+.walkInBaie-scaleBox {
+    position: relative;
+}
+
+.walkInBaie-scaleBox:hover {
+    top: -15px;
+    left: -15px;
+    background: linear-gradient(135.8deg, rgba(255, 147, 67, 1), rgba(234, 85, 3, 1));
+    box-shadow: 0 10px 20px 0 rgba(189, 189, 189, 0.5);
+    z-index: 100;
+}
+
+.scaleBox-big {
+    text-align: start;
+    color: #FFF;
+}
+
+.scaleBox-big p {
+    font-size: 28px;
+}
+
+.col-xs-3 .walkInBaie-scaleBox {
+    width: 290px;
+    height: 290px;
+}
+
+.col-xs-3 .walkInBaie-scaleBox:hover {
+    width: 320px;
+    height: 320px;
+}
+
+.col-xs-3 .scaleBox-big {
+    padding: 60px 0 0 28px;
+}
+
+.col-xs-3 .scaleBox-big .under_line {
+    margin: 28px 0 25px 0;
+}
+
+.col-xs-3 .scaleBox-big p {
+    width: 196px;
+}
+
+.col-xs-6 .walkInBaie-scaleBox {
+    width: 580px;
+    height: 290px;
+}
+
+.col-xs-6 .walkInBaie-scaleBox:hover {
+    width: 642px;
+    height: 320px;
+}
+
+.col-xs-6 .scaleBox-small {
+    padding: 84px 0 0 60px
+}
+
+.col-xs-6 .scaleBox-big {
+    padding: 51px 0 0 70px;
+}
+
+.col-xs-6 .scaleBox-big .under_line {
+    margin: 28px 0 25px 0;
+}
+
+.col-xs-6 .scaleBox-big p {
+    width: 504px;
+}
+
+.walkInBaie-img-introduce {
+    width: 540px;
+    height: 410px;
+    margin: -37px 120px 37px 40px;
+    border-radius: 10px;
+}
+
+.walkIn_box1 .thumbnail .caption {
+    width: 412px;
+}
+
+.walkIn_box1 .thumbnail .caption h2{
+    margin-top: 60px
+}
+
+.introduce-underline {
+    width: 76px;
+    height: 3px;
+    background-color: #333;
+    margin: 30px 0 18px;
+}
+
+.walkIn_box2 .container-fluid {
+    height: 100%;
+    width:100%;
+    background-size: cover;
+}
+
+@media screen and (max-width: 750px) {
+    .container, .container-fluid {
+        min-width: 0;
+    }
+
+    .walkIn_box1 .thumbnail {
+        width: 100%;
+        padding: 0 .4rem;
+        background-color: #fff;
+    }
+
+    .walkInBaie-img-introduce {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .walkIn_box1 .thumbnail .caption {
+        width: 6.7rem;
+        padding: .56rem 0 0;
+    }
+
+    .walkIn_box1 .thumbnail .caption h2{
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .introduce-underline {
+        /*display: none;*/
+        width: .46rem;
+        height: 2px;
+        margin: .14rem auto .29rem;
+    }
+
+    .walkIn_box1 .caption p {
+        width: 100%;
+        height: auto;
+        font-size: .28rem;
+        line-height: .56rem;
+    }
+
+    .walkIn_box1 .baie_honor {
+        display: none;
+    }
+
+    .walkIn_box2 .row {
+        width: 100%;
+    }
+
+    .walkIn_box2 .container-fluid {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+}

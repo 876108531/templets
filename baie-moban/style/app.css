@@ -520,6 +520,9 @@ footer .pull-left:last-child {
 
 .walkIn_box1 .thumbnail {
     width: 1160px;
+    background-color: #F4F4F4;
+    border-width: 0;
+    border-radius: 0;
 }
 
 .walkIn_box1 .baie_honor {
@@ -535,6 +538,7 @@ footer .pull-left:last-child {
 }
 
 .walkIn_box2 .row {
+    width: 1164px;
     margin: 159px auto 0;
 }
 
@@ -850,7 +854,6 @@ footer .pull-left:last-child {
     height: 860px;
     min-width: 1200px;
     padding-top: 76px;
-    background-color: #0e90d2;
 }
 
 .publicWelfare-box1 .list ul {
@@ -895,5 +898,9 @@ footer .pull-left:last-child {
     font-size: 18px;
     color: #9B9B9B;
     line-height: 36px;
+}
+
+#publicWelfare-swiper {
+    display: none;
 }
 /*publicWelfare END*/

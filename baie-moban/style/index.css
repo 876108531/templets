@@ -129,7 +129,7 @@ video {
 }
 /*baie-body END*/
 
-@media (max-width: 750px) {
+@media screen and (max-width: 750px) {
     .jumbotron h1 {
         font-size: .4rem;
     }
