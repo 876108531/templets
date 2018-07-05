@@ -511,7 +511,8 @@ footer .pull-left:last-child {
 
 /*walkIn START*/
 .walkIn_box1 {
-    height: 1282px;
+    height: auto;
+    padding-bottom: 70px;
 }
 
 .walkIn_box2 {
@@ -520,6 +521,8 @@ footer .pull-left:last-child {
 
 .walkIn_box1 .thumbnail {
     width: 1160px;
+    margin: auto;
+    padding: 0 40px;
     background-color: #F4F4F4;
     border-width: 0;
     border-radius: 0;

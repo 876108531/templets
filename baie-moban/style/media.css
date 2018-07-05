@@ -235,14 +235,45 @@
     }
 
     #footer-box1 {
+        padding-bottom: .4rem;
+    }
+
+    #footer-box1 h4 {
+        display: none;
+    }
+
+    #footer-box1 ul:nth-child(2) li:before {
+        content: "地址：";
+    }
+
+    #footer-box1 ul:nth-child(3) li:nth-child(2):before {
+        content: "电话：";
+    }
+
+    #footer-box1 ul:nth-child(4) li:nth-child(2):before {
+        content: "邮箱：";
+    }
+
+    #footer-box1 ul:nth-child(4) li:nth-child(3):before {
+        content: "邮箱：";
     }
 
     #footer-box2 {
         margin-right: 0;
+        padding-bottom: .4rem;
+    }
+
+    #footer-box2 h4 {
+        display: none;
     }
 
     #footer-box3 {
         width: 100%;
+        padding-bottom: .4rem;
+    }
+
+    #footer-box3 h4 {
+        display: none;
     }
 
     .collapse-btn {

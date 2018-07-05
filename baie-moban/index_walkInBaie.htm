@@ -17,15 +17,6 @@
         .swiper-button-next {
             background-image: url("{dede:global.cfg_templets_skin/}/icon/btn-right.png");
         }
-
-        #baie-navbar .baieNav-walkInBaie {
-            font-size: 16px;
-            padding-bottom: 8px;
-        }
-
-        #baie-navbar .baieNav-walkInBaie + .under_line {
-            display: block;
-        }
     </style>
 </head>
 <body style="background:#f2f2f2">
@@ -34,9 +25,11 @@
     <div class="walkIn_box1">
         <div class="container">
             <div class="row">
-                <p class="text-center" style="margin: 80px 0 110px;"><img class="media-width100" src="{dede:global.cfg_templets_skin/}/icon/Title-walkInBaie1.png" alt="标题"></p>
+                <p class="text-center title-box" style=""><img
+                        src="{dede:global.cfg_templets_skin/}/icon/Title-walkInBaie1.png" alt="标题"></p>
                 <div class="thumbnail clearfix">
-                    <img class="pull-left walkInBaie-img-introduce" src="/uploads/baie/walkInBaie_img_introduce.jpg" alt="企业配图">
+                    <img class="pull-left walkInBaie-img-introduce" src="/uploads/baie/walkInBaie_img_introduce.jpg"
+                         alt="企业配图">
                     <div class="caption pull-left">
                         <h2>关于企业</h2>
                         <div class="introduce-underline"></div>
@@ -44,8 +37,21 @@
                         <p><a href="[field:arcurl/]">[field:description/]</a></p>
                         {/dede:arclist}
                     </div>
+                    <div class="baie_honor2 clear">
+                        <ul>
+                            {dede:arclist typeid="31" channelid='1' addfields='body'}
+                            <li>
+                                <h1>[field:title/]</h1>
+                                <p class="line-clamp-3">[field:description/]</p>
+                            </li>
+                            {/dede:arclist}
+                            <div>
+                                <div class="baie_honor2_more_btn"></div>
+                            </div>
+                        </ul>
+                    </div>
                 </div>
-                <div class="baie_honor" style="">
+                <div class="baie_honor">
                     <div class="walk-swiper-container swiper-container-horizontal">
                         <div class="swiper-wrapper">
                             {dede:arclist typeid="31" channelid='1' addfields='body'}
@@ -58,7 +64,6 @@
                             </div>
                             {/dede:arclist}
                         </div>
-                        <!-- Add Scrollbar -->
                         <div class="walk-swiper-scrollbar"></div>
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
@@ -68,8 +73,7 @@
         </div>
     </div>
     <div class="walkIn_box2">
-        <div class="container-fluid"
-             style="background: url('/uploads/baie/walkInBaie_back_culture.png')">
+        <div class="container-fluid" style="background-image: url('/uploads/baie/walkInBaie_back_culture.png')">
             <div class="row">
                 <div class="col-xs-6 col-md-6 column">
                     <div class="walkInBaie-scaleBox">
@@ -164,6 +168,50 @@
                     </div>
                 </div>
             </div>
+            <div class="baie-culture">
+                <div class="culture">
+                    <h1 class="title">企业文化</h1>
+                    <div class="under_line b-color-white"></div>
+                    {dede:arclist idlist='76' channelid='1' addfields='body'}
+                    <p>[field:description/]</p>
+                    {/dede:arclist}
+                </div>
+                <div class="value">
+                    <h1 class="title">核心价值观</h1>
+                    <div class="under_line b-color-white"></div>
+                    {dede:arclist idlist='81' channelid='1' addfields='body'}
+                    <p>[field:description/]</p>
+                    {/dede:arclist}
+                </div>
+                <div class="mission">
+                    <img src="{dede:global.cfg_templets_skin/}/icon/icon-mission.png" alt="使命">
+                    <h1 class="title">使命</h1>
+                    {dede:arclist idlist='80' channelid='1' addfields='body'}
+                    <p>[field:description/]</p>
+                    {/dede:arclist}
+                </div>
+                <div class="idea">
+                    <img src="{dede:global.cfg_templets_skin/}/icon/icon-idea.png" alt="理念">
+                    <h1 class="title">理念</h1>
+                    {dede:arclist idlist='77' channelid='1' addfields='body'}
+                    <p>[field:description/]</p>
+                    {/dede:arclist}
+                </div>
+                <div class="vision">
+                    <img src="{dede:global.cfg_templets_skin/}/icon/icon-vision.png" alt="愿景">
+                    <h1 class="title">愿景</h1>
+                    {dede:arclist idlist='78' channelid='1' addfields='body'}
+                    <p>[field:description/]</p>
+                    {/dede:arclist}
+                </div>
+                <div class="purpose">
+                    <img src="{dede:global.cfg_templets_skin/}/icon/icon-purpose.png" alt="宗旨">
+                    <h1 class="title">宗旨</h1>
+                    {dede:arclist idlist='79' channelid='1' addfields='body'}
+                    <p>[field:description/]</p>
+                    {/dede:arclist}
+                </div>
+            </div>
         </div>
     </div>
     <div id="event-data" class="hidden">
@@ -185,14 +233,14 @@
     <div class="walkIn_box3">
         <div class="container">
             <div class="row">
-                <p class="text-center" style="margin: 90px 0 130px;"><img
+                <p class="text-center title-box" style=""><img
                         src="{dede:global.cfg_templets_skin/}/icon/Title-walkInBaie2.png" alt="标题"></p>
                 <div class="box">
                     <div style="position: relative">
                         <ul class="event_year over-hidden">
                         </ul>
                         <div class="big-more hidden"
-                             style="background: url('{dede:global.cfg_templets_skin/}/icon/btn-more.png') no-repeat;background-position: center center;"></div>
+                             style="background-image: url('{dede:global.cfg_templets_skin/}/icon/btn-more.png') no-repeat;background-position: center center;"></div>
                     </div>
                     <ul class="event_list">
                     </ul>
@@ -229,6 +277,30 @@
             $(this).children(".scaleBox-small").removeClass("hidden");
         }
     );
+</script>
+<script>
+    $(".baie_honor2_more_btn").parent().click(
+        function () {
+            var btn = $(".baie_honor2_more_btn"),
+                content = $(".baie_honor2 li:nth-child(n+4)");
+            if ($(this).hasClass("open")) {
+                content.css("display", "none");
+                btn.animate({}, function () {
+                    btn.css("transform", "rotate(135deg)");
+                });
+                $(this).removeClass("open");
+            } else {
+                content.css("display", "block");
+                btn.animate({}, function () {
+                    btn.css("transform", "rotate(315deg)");
+                });
+                $(this).addClass("open");
+            }
+        }
+    );
+</script>
+<script>
+    $(".baieNav-walkInBaie").parent().addClass("baieNav-active")
 </script>
 </body>
 </html>
