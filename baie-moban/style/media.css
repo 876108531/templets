@@ -207,6 +207,11 @@
     #submit {
         width: 100%;
         padding: .1rem 0;
+        background-color: #ccc;
+    }
+
+    #submit:active {
+        background-color: #EA5503;
     }
 
     .footer-collapse {
