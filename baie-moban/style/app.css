@@ -2,6 +2,7 @@
 html, body {
     min-width: 1200px;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -82,7 +83,7 @@ a {
     padding: 7px 15px;
 }
 
-.navbar-brand>img {
+.navbar-brand > img {
     height: 30px;
 }
 
@@ -176,6 +177,7 @@ a {
     color: #ccc;
     content: ">";
 }
+
 /*common END*/
 
 /*banner START*/
@@ -246,6 +248,7 @@ a {
 .swiper-container-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
     margin-top: 22px;
 }
+
 /*banner END*/
 
 /*header START*/
@@ -328,6 +331,7 @@ a {
 #baie-navbar .baie-nav-active + .under_line {
     display: block;
 }
+
 /*header END*/
 
 /*footer START*/
@@ -392,6 +396,7 @@ footer .pull-left:last-child {
 .footer-under-line {
     display: none;
 }
+
 /*footer END*/
 
 /*index START*/
@@ -507,6 +512,7 @@ footer .pull-left:last-child {
     line-height: 1.6em;
     text-indent: 0;
 }
+
 /*index END*/
 
 /*walkIn START*/
@@ -578,6 +584,7 @@ footer .pull-left:last-child {
 .walkIn_box3 {
     /*padding-top: 230px;*/
 }
+
 /*walkIn END*/
 
 /*pioneer START*/
@@ -722,6 +729,7 @@ footer .pull-left:last-child {
     color: #BDBDBD;
     line-height: 40px;
 }
+
 /*pioneer END*/
 
 /*article START*/
@@ -761,11 +769,11 @@ footer .pull-left:last-child {
     margin: 45px 0 59px;
 }
 
-
 .product-img-box img {
     max-width: 400px;
     max-height: 600px;
 }
+
 /*article END*/
 
 /*product START*/
@@ -846,11 +854,12 @@ footer .pull-left:last-child {
 .product-list h1 {
     margin: 20px 0 50px 0;
 }
+
 /*product END*/
 
 /*publicWelfare START*/
 .publicWelfare-box1 .title {
-    padding: 80px 0 60px;
+    padding: 0 0 60px;
 }
 
 .publicWelfare-box1 .list {
@@ -906,4 +915,122 @@ footer .pull-left:last-child {
 #publicWelfare-swiper {
     display: none;
 }
+
 /*publicWelfare END*/
+/*zp START 招聘*/
+.recruit-body .content1440 {
+    margin-top: 106px;
+}
+
+.recruit-body .titlePage {
+    margin: 91px 0;
+}
+
+.recruit-body .boxs {
+    border-radius: 10px;
+}
+
+.recruit-body .boxs:hover {
+    background:linear-gradient(135deg,rgba(255,147,67,1),rgba(234,85,3,1));
+    box-shadow:0px 10px 20px 0px rgba(189,189,189,0.5);
+}
+
+.recruit-body .boxs .boxs-r .r-tit {
+    display: inline-block;
+}
+
+.recruit-body .boxs .boxs-r .r-txt2 {
+    display: inline-block;
+    float: right;
+    margin-top: 7px;
+}
+
+.recruit-body .boxs .boxs-r .r-txt1 {
+    padding: 0;
+}
+
+.recruit-body .boxs:hover:after {
+    display: none;
+}
+
+.recruit-body .boxs .boxs-l, .recruit-body .boxs .boxs-r {
+    display: inline-block;
+}
+
+.recruit-body .boxs .boxs-l {
+    width: 20%;
+}
+
+.recruit-body .boxs .boxs-r {
+    width: 80%;
+    padding-left: 100px;
+}
+
+.recruit-body .boxs .boxs-l .l-request {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.titlePage .bgTxt {
+    padding: 0 20px;
+    font-size: 90px;
+    font-weight: 900;
+    position: relative;
+    display: inline-block;
+    color: #EAEAEA;
+    background-color: #FFF;
+}
+
+.titlePage .cn {
+    top: -102px;
+    font-size: 44px;
+    font-weight: 900;
+}
+
+.titlePage .cn:after {
+    bottom: 45%;
+    z-index: -1;
+}
+
+.titlePage .en {
+    font-size: 20px;
+    color: #000;
+    background: transparent;
+    padding: 0;
+    top: -111px;
+    font-weight: 900;
+}
+
+.recruit-list-box {
+    max-width: 1160px;
+    margin: auto;
+}
+
+.modal {
+    overflow: scroll;
+}
+
+.modal .modal-box {
+    width: 1000px;
+    margin: 80px auto;
+}
+
+.recruit-body .boxs .boxs-l .l-pay span {
+    color: #333;
+}
+
+.moreload {
+    line-height: 50px;
+}
+
+.modal .modal-box .join {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    line-height: 40px;
+}
+
+#zp-close {
+    display: none;
+}
+/*zp END*/

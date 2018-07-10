@@ -1587,7 +1587,6 @@ footer {
 .modal .modal-box .join {
     width: 200px;
     height: 40px;
-    background: url(/skin/images/join.png) no-repeat center center;
     background-color: #ff5d04;
     margin: 30px auto 0;
     cursor: pointer;

@@ -1,4 +1,5 @@
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1010px) {
+    /*Nav-Bar*/
     #baie-navbar .baie-nav-active + .under_line {
         display: none !important;
     }
@@ -11,10 +12,14 @@
     .navbar-nav {
         margin: 0;
         padding-bottom: 1rem;
+        -webkit-filter: blur(0);
+        -moz-filter: blur(0);
+        -ms-filter: blur(0);
+        filter: blur(0);
     }
 
     #baie-navbar {
-        max-height: 1000px;
+        max-height: 800px;
         padding: 0;
         background-color: #333;
         border-color: #333;
@@ -39,6 +44,10 @@
     #baie-navbar li:focus {
         color: #fff;
         background-color: #444;
+        border-bottom-width: 0;
+    }
+
+    #baie-navbar .open > a {
         border-bottom-width: 0;
     }
 
@@ -75,6 +84,10 @@
         margin-bottom: .4rem;
     }
 
+    #baie-navbar .baieNav-active .under_line {
+        display: none;
+    }
+
     .navbar-toggle span:last-child {
         display: none;
     }
@@ -109,10 +122,6 @@
 
     .btn {
         padding: 0;
-    }
-
-    #baie-navbar .baieNav-active .under_line {
-        display: none;
     }
 
     .baie-box2 .pioneer_box {
@@ -569,31 +578,19 @@
     }
 
     #publicWelfare-swiper .swiper-slide {
-        /*width: 4.5rem;*/
         width: 60%;
         height: 6.75rem;
         margin-top: .3rem;
     }
 
     #publicWelfare-swiper .swiper-slide-active {
-        /*width: 5rem;*/
         width: 66%;
         height: 7.5rem;
         margin-top: 0;
     }
 
-    #publicWelfare-swiper .swiper-slide-active h3{
-        /*font-size: .32rem;*/
-    }
-
     #publicWelfare-swiper .swiper-slide-active p{
-        /*font-size: .24rem;*/
-        /*max-height: 57%;*/
         max-height: 2.85rem;
-    }
-
-    #publicWelfare-swiper .img-box {
-
     }
 
     #publicWelfare-swiper .img-box .img {
@@ -618,4 +615,223 @@
     }
 
     /* 百e公益 END*/
+    /* 百e招聘 START*/
+    .titlePage .bgTxt {
+        font-size: .77rem;
+    }
+
+    .titlePage .cn {
+        top: -.85rem;
+        font-size: .4rem;
+    }
+
+    .titlePage .cn:after {
+        bottom: 45%;
+        z-index: -1;
+    }
+
+    .titlePage .en {
+        font-size: .2rem;
+        top: -.95rem;
+    }
+
+    .recruit-body .titlePage {
+        margin: .5rem 0;
+        height: 60px;
+    }
+
+    .recruit-body .boxs {
+        height: 170px;
+        padding: 30px 25px 0;
+        margin-bottom: 20px;
+    }
+
+    .recruit-body .boxs .boxs-l {
+        position: absolute;
+        width: 280px;
+    }
+
+    .recruit-body .boxs .boxs-r {
+        padding: 0;
+        width: 100%;
+    }
+
+    .recruit-body .boxs .boxs-r .r-tit {
+        font-size: 15px;
+        margin: 0;
+        float: left;
+    }
+
+    .recruit-body .boxs .boxs-r .r-txt2 {
+        float: left;
+        clear: both;
+        margin: 0;
+        padding: 10px 0;
+        color: #BDBDBD;
+    }
+
+    .recruit-body .boxs .boxs-r .r-txt1 {
+        clear: both;
+        font-size: 14px;
+    }
+
+    .recruit-body .boxs .boxs-r .r-txt1 > p {
+        font-size: 14px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+    }
+
+    .recruit-body .boxs .boxs-l .l-pay span {
+        font-size: 15px;
+        font-weight: 900;
+        position: relative;
+        left: 5.1rem;
+    }
+
+    .recruit-body .boxs .boxs-l .l-request {
+        margin-top: 0;
+        position: relative;
+        top: 90px;
+        color: #BDBDBD;
+        font-size: 15px;
+    }
+
+    .recruit-list-box {
+        margin: .4rem;
+    }
+
+    .modal .modal-box {
+        width: 100%;
+        height: auto;
+        margin: 44px 0 0;
+        padding: .3rem .4rem;
+        min-height: 95%;
+    }
+
+    .modal .modal-box .m-text {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .modal.upload-m .modal-box {
+        width: 100%;
+        min-height: 100%;
+        margin: 0;
+        padding: 65px 0 0;
+    }
+
+    .modal .modal-box .m-top .top-post {
+        color: #333;
+    }
+
+    .modal.upload-m .modal-box .back {
+        background: transparent;
+        color: #333;
+        padding-left: .3rem;
+    }
+
+    .modal .modal-box .m-request span {
+        display: inline-block;
+        width: 49%;
+        margin: 0;
+    }
+
+    .modal .modal-box .m-request span.pay {
+        font-size: inherit;
+        color: #333;
+    }
+
+    .modal .modal-box .join {
+        padding: 0;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .modal.upload-m .modal-box .main .group .file-box .btn {
+        color: #EA5503;
+        background: transparent;
+        font-size: 15px;
+    }
+
+    .modal.upload-m .modal-box .back img{
+        right: .3rem;
+        top: .3rem;
+    }
+
+    .modal .modal-box .back.article {
+        right: .3rem;
+        top: .3rem;
+    }
+
+    .modal.upload-m .modal-box .main .group input.submit {
+        width: 100%;
+        border-radius: 0;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .modal.upload-m .modal-box .main .group p {
+        display: inline-block;
+    }
+
+    .modal.upload-m .modal-box .main .group .input-box {
+        display: inline-block;
+    }
+
+    .modal.upload-m .modal-box .main .group .need {
+        display: none;
+    }
+
+    .modal.upload-m .modal-box .main {
+        padding: 1rem .3rem;
+    }
+
+    .modal.upload-m.active {
+        z-index: 4000;
+    }
+
+    .modal .star {
+        color: #EA5503;
+    }
+
+    .modal.upload-m .modal-box .main .group .input-box {
+        border-width: 0;
+    }
+
+    .modal.upload-m .modal-box .main .group {
+        border-bottom: 1px solid #ddd;
+        margin: .3rem 0;
+        padding-bottom: .3rem;
+    }
+
+    .modal.upload-m .modal-box .main .group:last-child {
+        border-bottom: 0;
+    }
+
+    .modal.upload-m .modal-box .main .group:nth-child(7) {
+        border-bottom: 0;
+    }
+
+    .modal.upload-m .modal-box .main .group:nth-child(7) .input-box{
+        vertical-align: middle;
+    }
+
+    .modal .modal-box .m-top {
+        padding-right: 30px;
+    }
+
+    #zp-back {
+        display: none;
+    }
+
+    #zp-close {
+        display: block;
+    }
+    /* 百e招聘 END*/
 }

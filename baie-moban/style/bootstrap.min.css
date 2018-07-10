@@ -4500,7 +4500,7 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1011px) {
     .navbar-header {
         float: left
     }
@@ -4520,7 +4520,7 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
     overflow-y: auto
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1011px) {
     .navbar-collapse {
         width: auto;
         border-top: 0;
@@ -4652,7 +4652,7 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
     margin-top: 4px
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1011px) {
     .navbar-toggle {
         display: none
     }
@@ -4668,7 +4668,7 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
     line-height: 20px
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1010px) {
     .navbar-nav .open .dropdown-menu {
         position: static;
         float: none;
@@ -4693,7 +4693,7 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1011px) {
     .navbar-nav {
         float: left;
         margin: 0

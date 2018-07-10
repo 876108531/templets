@@ -7,38 +7,33 @@
         .navbar {
             background-color: #333;
         }
-        #baie-navbar .baieNav-recruitment {
-            font-size: 16px;
-            padding-bottom: 8px;
-        }
-        #baie-navbar .baieNav-recruitment + .under_line {
-            display: block;
-        }
     </style>
 </head>
+<body>
 {dede:include filename="components/header.htm"/}
 <section class="recruit-body">
-    <div class="content1440" style="margin-top: 180px;">
+    <div class="content1440">
         <div class="titlePage">
+            <span class="bgTxt">RECRUIT</span>
             <span class="cn">{dede:field name='typename'/}</span>
             <span class="en">RECRUIT</span>
         </div>
-        <ul>
+        <ul class="recruit-list-box">
             {dede:list pagesize ='6'}
             <li class="boxs" onclick="showBox([field:id/])">
                 <div class="boxs-l">
-                    <div class="l-post"></div>
-                    <div class="l-pay">月薪：<span>[field:yx/]</span></div>
-                    <div class="l-request">
+                    <!--<div class="l-post"></div>-->
+                    <div class="l-pay"><span>[field:yx/]</span></div>
+                    <div class="l-request line-clamp-1">
                         <span>[field:xl/]</span>
                         <span>[field:jy/]</span>
-                        <span>工作地点：[field:dd/]</span>
+                        <span>[field:dd/]</span>
                     </div>
                 </div>
                 <div class="boxs-r">
                     <div class="r-tit">[field:title/]</div>
-                    <div class="r-txt1"><p> [field:description function="cn_substr(@me,600)"/]...</div>
                     <div class="r-txt2">"六险一金 季度+年终奖金"</div>
+                    <div class="r-txt1"><p> [field:description function="cn_substr(@me,600)"/]...</div>
                 </div>
             </li>
             {/dede:list}
@@ -54,7 +49,8 @@
         <div class="back">
             <span class="firstChild">上传资料</span>
             <span>格式为Word文档</span>
-            <img src="/skin/images/back.jpg" alt="资料图">
+            <img id="zp-back" src="/skin/images/back.jpg" alt="关闭按钮"/>
+            <img id="zp-close" src="{dede:global.cfg_templets_skin/}/icon/btn-close.png" alt="关闭按钮">
         </div>
         <div class="main">
             <form action='/plus/diy.php' class="form-box1" enctype="multipart/form-data" method="post">
@@ -63,31 +59,31 @@
                 <input type="hidden" name="do" value="2"/>
 
                 <div class="group">
-                    <p>姓名：<span class="need">（必填）</span><span class="text"></span></p>
+                    <p>姓名<span class="star">*</span><span class="need">（必填）</span><span class="text"></span></p>
                     <div class="input-box">
-                        <input type="text" name="name" class="user"/>
+                        <input type="text" name="name" class="user" placeholder="请输入姓名" style="border: hidden"/>
                         <span class="err-text text-user"></span>
                         <span class="btn_Prompt Prompt-user"></span>
                     </div>
                 </div>
                 <div class="group">
-                    <p>电话：<span class="need">（必填）</span><span class="text"></span></p>
+                    <p>电话<span class="star">*</span><span class="need">（必填）</span><span class="text"></span></p>
                     <div class="input-box">
-                        <input type="text" name="contact" class="phone"/>
+                        <input type="text" name="contact" class="phone" placeholder="请输入电话"/>
                         <span class="err-text text-phone"></span>
                         <span class="btn_Prompt Prompt-phone"></span>
                     </div>
                 </div>
                 <div class="group">
-                    <p>邮件：<span class="need">（必填）</span><span class="text"></span></p>
+                    <p>邮件<span class="star">*</span><span class="need">（必填）</span><span class="text"></span></p>
                     <div class="input-box">
-                        <input type="text" name="mail" class="Email"/>
+                        <input type="text" name="mail" class="Email" placeholder="请输入邮箱"/>
                         <span class="err-text text-email"></span>
                         <span class="btn_Prompt Prompt-email"></span>
                     </div>
                 </div>
                 <div class="group">
-                    <p>简历：<span class="need">（必填）</span><span class="text"></span></p>
+                    <p>简历<span class="star">*</span><span class="need">（必填）</span><span class="text"></span></p>
                     <div class="file-box input-box">
                         <input type="text" name="textfield" id="textfield" placeholder="未选择任何文件"/>
                         <input type="button" class="btn" value="选择文件"/>
@@ -132,37 +128,40 @@
 <script src="{dede:global.cfg_templets_skin/}/js/validation.js"></script>
 <script src="{dede:global.cfg_templets_skin/}/js/app.js"></script>
 <script type="text/javascript">
-  $(".submit").click(function () {
-    $(".form-box1  input").focus();
-    if ($(".Prompt-user").hasClass("Correct") && $(".Prompt-phone").hasClass("Correct") && $(".Prompt-email").hasClass("Correct") && $(".file").val() != "") {
-      console.log('成功')
-      $(".recruit-body").addClass("blur")
-      $(".header,.nav,footer").addClass("blur");
-      $(".return_TK").fadeIn()
-      return true;
-    } else {
-      console.log('失败')
-      return false;
-    }
-  })
-  $(".return_TK .good .btn-inputOk").click(function () {
-    $(".return_TK").fadeOut();
-    $(".user").val('')
-    $(".phone").val('')
-    $(".Email").val('')
-    $(".file").val('')
-    $("#textfield").val('')
-    $(".btn_Prompt").removeClass("Correct")
-    $(".modal.upload-m .modal-box .back img").trigger("click");
-    $(".modal .modal-box .back").trigger("click");
-  })
+    $(".submit").click(function () {
+        $(".form-box1  input").focus();
+        if ($(".Prompt-user").hasClass("Correct") && $(".Prompt-phone").hasClass("Correct") && $(".Prompt-email").hasClass("Correct") && $(".file").val() != "") {
+            console.log('成功')
+            $(".recruit-body").addClass("blur")
+            $(".header,.nav,footer").addClass("blur");
+            $(".return_TK").fadeIn()
+            return true;
+        } else {
+            console.log('失败')
+            return false;
+        }
+    })
+    $(".return_TK .good .btn-inputOk").click(function () {
+        $(".return_TK").fadeOut();
+        $(".user").val('')
+        $(".phone").val('')
+        $(".Email").val('')
+        $(".file").val('')
+        $("#textfield").val('')
+        $(".btn_Prompt").removeClass("Correct")
+        $(".modal.upload-m .modal-box .back img").trigger("click");
+        $(".modal .modal-box .back").trigger("click");
+    })
 </script>
 <script>
-  function showBox(id) {
-    $.get('/plus/view.php?aid=' + id, function (data) {
-      $(".show-product").html(data);
-    })
-  }
+    function showBox(id) {
+        $.get('/plus/view.php?aid=' + id, function (data) {
+            $(".show-product").html(data);
+        })
+    }
+</script>
+<script>
+    $(".baieNav-recruitment").parent().addClass("baieNav-active")
 </script>
 </body>
 </html>

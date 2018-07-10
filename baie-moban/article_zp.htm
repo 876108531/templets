@@ -1,0 +1,48 @@
+<!--招聘详情-弹出层-->
+<div class="modal-box">
+    <div class="back article">
+        <img id="zp-back" src="/skin/images/back.jpg" alt="关闭按钮"/>
+        <img id="zp-close" src="{dede:global.cfg_templets_skin/}/icon/btn-close.png" alt="关闭按钮"/>
+    </div>
+    <div class="m-top">
+        <span class="top-post">{dede:field.title/}</span>
+        <span class="top-gs">{dede:field.zw/}</span>
+    </div>
+    <div class="m-request">
+        <span>月薪：<span class="pay">{dede:field.yx/}</span></span>
+        <span>工作经验：{dede:field.jy/}</span>
+        <span>学历：{dede:field.xl/}</span>
+        <span>工作地点：{dede:field.dd/}</span>
+    </div>
+    <div class="m-trait">
+        <span style="background: #ff4f4f;">员工旅游</span> <span style="background: #ff4f4f;">季度+年终奖金</span>
+    </div>
+    <div class="m-text">
+        <div class="text text1">
+            {dede:field.body/}
+        </div>
+    </div>
+    <div class="join">投递简历</div>
+    <a href="javascript:;" style="display: none;" onclick="showBox({dede:field.id/})" class="post">我要应聘</a>
+</div>
+
+<script>
+    $(".recruit-body .boxs").click(function () {
+        $(".modal-join").addClass("active");
+        $(".recruit-body").addClass("blur");
+        $(".header,footer").addClass("blur");
+    });
+    $(".modal-join .back").click(function () {
+        $(".modal-join").removeClass("active");
+        $(".recruit-body").removeClass("blur");
+        $(".header,footer").removeClass("blur");
+        $(".show-product").html("");
+    });
+    $(".modal-join .join").click(function () {
+        $(".upload-m").addClass("active");
+    });
+    $(".upload-m .back img").click(function () {
+        $(".upload-m").removeClass("active");
+    });
+    verifyFormJoin();
+</script>

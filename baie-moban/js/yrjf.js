@@ -243,12 +243,12 @@ var yrjf = {
 		$(".recruit-body .boxs").click(function() {
 			$(".modal-join").addClass("active");
 			$(".recruit-body").addClass("blur");
-			$(".header,.nav,footer").addClass("blur");
+			$(".header,footer").addClass("blur");
 		});
 		$(".modal-join .back").click(function() {
 			$(".modal-join").removeClass("active");
 			$(".recruit-body").removeClass("blur");
-			$(".header,.nav,footer").removeClass("blur");
+			$(".header,footer").removeClass("blur");
 		});
 		$(".modal-join .join").click(function() {
 			$(".upload-m").addClass("active");
@@ -336,7 +336,7 @@ var yrjf = {
 		$(".recommend-body .boxs").click(function() {
 			$(".recommend-m").addClass("active");
 			$(".recommend-body").addClass("blur");
-			$(".header,.nav,footer").addClass("blur");
+			$(".header,footer").addClass("blur");
 		});
 		var img_W = $(".recommend-body .boxs .box img").width();
 		$(".recommend-body .boxs .box img").css("height",img_W/2);
