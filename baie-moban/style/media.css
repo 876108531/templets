@@ -647,8 +647,8 @@
     }
 
     .recruit-body .boxs .boxs-l {
-        position: absolute;
-        width: 280px;
+        position: relative;
+        width: 100%;
     }
 
     .recruit-body .boxs .boxs-r {
@@ -686,14 +686,14 @@
     .recruit-body .boxs .boxs-l .l-pay span {
         font-size: 15px;
         font-weight: 900;
-        position: relative;
-        left: 5.1rem;
+        position: absolute;
+        right: 0;
     }
 
     .recruit-body .boxs .boxs-l .l-request {
         margin-top: 0;
-        position: relative;
-        top: 90px;
+        position: absolute;
+        top: 110px;
         color: #BDBDBD;
         font-size: 15px;
     }
